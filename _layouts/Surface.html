@@ -1,0 +1,782 @@
+---
+---
+
+
+<body style = "margin:0;background-image: url('../images/GolfBackground.jpeg');background-position:center;">
+
+<script>
+  function myFunction1(x) {
+    x.classList.toggle("change");
+  }
+  </script>
+
+
+
+
+<script>
+function toggleText() {
+  var text = document.getElementById("PersonalCaddy");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+  
+function toggleNav() {
+  var element = document.getElementById("mySidenav");
+  if (element.style.width == "250px") {
+      element.style.width = "0px";
+  } else {
+      element.style.width = "250px";
+  }
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+.bar1, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+}
+
+.bar2
+{
+  width: 25px;
+  height: 5px;
+  background-color:white;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float:left;
+  z-index: 2;
+  position: fixed;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+a {
+  margin-left: 3px;
+  
+}
+
+a:hover {
+    cursor: pointer;
+    color:red;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+    
+
+LeftPanel
+    {
+        float:left;
+        width: 30%;
+        
+        height:90%;
+       
+        overflow: auto;
+      white-space: nowrap;
+      margin-top: 4%;
+      margin-bottom: 4%;
+      margin-left: 4px;
+
+    }
+    DescriptionPanel
+    {
+        float:right;
+        width: 33%; 
+        height:90%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+       
+        
+
+    }
+
+    UIsection
+    {
+        
+        float:left;
+        width: 60%;
+        height: 700px;
+        display:block;
+       margin: auto;
+       margin-left:25%;
+        margin-top:50px;
+        margin-bottom:20%;
+        border-radius: 25px;
+        border-color:white;
+        border-style:solid;
+       
+    }
+
+    designNav{
+    float: right;
+    Width: 54%;
+    height: 5%;
+    background-color: black;
+    padding-left:20px;
+    border-bottom-left-radius: 20px;
+}
+
+designNav a{
+ 
+ text-decoration: none;
+ color:white;
+}
+
+designNav a:hover{
+ opacity: 0.5;
+ color:white;
+}
+
+
+ 
+    a,b, p, ul, ol li, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Oxanium' ;
+        
+       }
+</style>
+
+
+<div class="container" onclick="myFunction1(this);toggleNav()">
+  <div class="bar1" style = "margin-top:20px;margin-left:20px;cursor:pointer"></div>
+  <div class="bar2" style = "margin-left:20px;cursor:pointer"></div>
+  <div class="bar3" style = "margin-left:20px;cursor:pointer;"></div>
+</div>
+
+<designNav>
+  <b style ="color:white;text-align: center; font-size:25px;"> Personal Caddy</b>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Surface.html", style ="color:red;text-align: center; font-size:25px;opacity:1"> Surface</a>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Skeleton.html", style ="text-align: center; font-size:25px;">Skeleton</a>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Structure.html", style ="text-align: center; font-size:25px;">Structure</a>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Scope.html", style ="text-align: center; font-size:25px;">Scope</a>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Strategy.html", style ="text-align: center; font-size:25px;">Strategy</a>
+  </designNav>
+
+
+
+
+
+<div id="mySidenav" class="sidenav" style ="color: white;background-image: url('../images/teal.jpeg');">
+ 
+    <h2>Tones Designs</h2>
+    <a href="http://127.0.0.1:4000/Home.html", style ="text-decoration: none;color:white">Home</a>
+    <a href="http://127.0.0.1:4000/Home.html#AboutMe", style ="text-decoration: none;color:white">About Me</a>
+    <a style ="text-decoration: none;color:white;transition-delay: 2s;", onclick="toggleText()">Projects</a>
+    <a href="http://127.0.0.1:4000/Surface.html", id="PersonalCaddy", style ="text-decoration:none;font-size:18px;color:white;margin-left: 20px;display: none;">Personal Caddy</a>
+    <a href="http://127.0.0.1:4000/Home.html#AboutMe", style ="text-decoration: none;color:white">Contact</a>
+    
+    </navBar>
+  </div>
+
+
+    
+
+    
+   
+
+
+    
+
+    
+  <UISection style ="background-color: black">
+    <img id="myImg" src= "images/teal.jpg" alt="Lost" width=35% height=90% style ="margin-top:4%; margin-bottom:4%;border-radius: 16px;">
+        
+
+    <leftPanel style ="color: grey;background-color: black">
+      <h2 style ="color: white">Design</h2>
+        <b style ="color:white">Getting Started</b>
+        <br>
+        <a onclick="myFunction()">1:Login Page</a>
+        <script>
+            function myFunction() {
+              document.getElementById("myImg").src = "images/SketchMockups/1.png";
+              document.getElementById("DescriptionText").innerHTML = "1:Login Page<br><br>This is the login of Personal Caddy. From here a user can log in or create an account. A user also has the options to open the reset password menu and look at the Help section"
+            }
+            </script>
+            <br>
+
+            <a onclick="myFunction2()">2:Create Account</a>
+            <script>
+                function myFunction2() {
+                  document.getElementById("myImg").src = "images/SketchMockups/2.png";
+                  document.getElementById("DescriptionText").innerHTML = "2:Create Account<br><br>This is the account creation dialog from selecting create account on the login page."
+                }
+                </script>
+                <br>
+
+                <a onclick="myFunction3()">3:Create Account</a>
+                <script>
+                    function myFunction3() {
+                      document.getElementById("myImg").src = "images/SketchMockups/3.png";
+                      document.getElementById("DescriptionText").innerHTML = "3:Create Account<br><br>This is continuation of the account creation."
+                    }
+                    </script>
+                    <br>   
+
+                    <a onclick="myFunction4()">4:Account Confirmation</a>
+                    <script>
+                        function myFunction4() {
+                          document.getElementById("myImg").src = "images/SketchMockups/4.png";
+                          document.getElementById("DescriptionText").innerHTML = "4:Account Confirmation<br><br>Confirmation that an account has been created."
+                        }
+                        </script>
+                        <br>  
+
+                        <a onclick="myFunction5()">5:Home Page</a>
+                        <script>
+                            function myFunction5() {
+                              document.getElementById("myImg").src = "images/SketchMockups/5.png";
+                              document.getElementById("DescriptionText").innerHTML = "5:Home Page<br><br>This is the personal caddy homepage. This is the main menu where the user can access all of the application features."
+                            }
+                            </script>
+                            <br>
+
+                            <a onclick="myFunction45()">6:Start A Round</a>
+                 <script>
+                function myFunction45() {
+                document.getElementById("myImg").src = "images/SketchMockups/45.png";
+                document.getElementById("DescriptionText").innerHTML = "6:Start A Round<br><br>This menu is where the user inputs round information before entering play mode. They can add the golf course, add the golf set they're using, choose to use a different handicap for the round and add other golfers that they're marking."
+                                                                                                                                                                            }
+                                                                                                                                                                            </script>
+                                                                                                                                                                            <br>
+                                                                                                                                                    
+                                                                                                                                                                            <a onclick="myFunction46()">7: Add Golfer</a>
+                                                                                                                                                                            <script>
+                                                                                                                                                                                function myFunction46() {
+                                                                                                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/46.png";
+                                                                                                                                                                                  document.getElementById("DescriptionText").innerHTML = "7: Add Golfer<br><br>This is the Add golfer menu. A user can add other app users by scanning their golfer tag or inputting their ID manually. They can also add golfer information for non app users manually."
+                                                                                                                                                                                }
+                                                                                                                                                                                </script>
+                                                                                                                                                                                <br>  
+                                                                                                                                                        
+                                                                                                                                                                                <a onclick="myFunction47()">8:Golfer Added</a>
+                                                                                                                                                                                <script>
+                                                                                                                                                                                    function myFunction47() {
+                                                                                                                                                                                      document.getElementById("myImg").src = "images/SketchMockups/47.png";
+                                                                                                                                                                                      document.getElementById("DescriptionText").innerHTML = "8:Golfer Added<br><br>This indicates to a user that a golfer has been scanned or added. They also have the option to remove the golfer. This only appears when adding other app user accounts."
+                                                                                                                                                                                    }
+                                                                                                                                                                                    </script>
+                                                  <br>  
+                                                  <br>  
+                                                  <br>                                                                                                                                    <br>
+                                                  <b style ="color:white">Play Mode</b>
+                                                <br>  
+                                                
+
+                                            <a onclick="myFunction11()">9:Play Mode</a>
+                                            <script>
+                                                function myFunction11() {
+                                                  document.getElementById("myImg").src = "images/SketchMockups/11.png";
+                                                  document.getElementById("DescriptionText").innerHTML = "9:Play Mode<br><br>This is what a user sees in play mode. They have the distance to the centre of the green. The recommended club choice. Options to add or remove shots as well as directly add scores for multiple players. The flag button indicates that a user has holed out. The user can also see their scorecard and hole information on this screen."
+                                                }
+                                                </script>
+                                                <br>
+                                    
+                                                <a onclick="myFunction12()">10:PM No shots</a>
+                                                <script>
+                                                    function myFunction12() {
+                                                      document.getElementById("myImg").src = "images/SketchMockups/12.png";
+                                                      document.getElementById("DescriptionText").innerHTML = "10:PM No shots<br><br>This is how play mode looks when a user hasn't begun tracking hole/shot progress. The user must click the set tee button. This is necessary as players may use different golf tees on a different day and allows for the most accurate distance tracking. This will indicate the start point for the hole. The user can also choose not to track scores for the hole."
+                                                    }
+                                                    </script>
+                                                    <br>
+                                    
+                                                    <a onclick="myFunction13()">11:Add Scores</a>
+                                                    <script>
+                                                        function myFunction13() {
+                                                          document.getElementById("myImg").src = "images/SketchMockups/13.png";
+                                                          document.getElementById("DescriptionText").innerHTML = "11:Add Scores<br><br>This is the menu when a user is adding scores for a hole."
+                                                        }
+                                                        </script>
+                                                        <br>   
+                                    
+                                                        <a onclick="myFunction14()">12:AS Change hole</a>
+                                                        <script>
+                                                            function myFunction14() {
+                                                              document.getElementById("myImg").src = "images/SketchMockups/14.png";
+                                                              document.getElementById("DescriptionText").innerHTML = "12:AS Change hole<br><br>This is a continuation of the add scores menu where the user has clicked on the hole to change the hole they are marking scores for."
+                                                            }
+                                                            </script>
+                                                            <br>  
+                                    
+                                                            <a onclick="myFunction15()">13:Discard</a>
+                                                            <script>
+                                                                function myFunction15() {
+                                                                  document.getElementById("myImg").src = "images/SketchMockups/15.png";
+                                                                  document.getElementById("DescriptionText").innerHTML = "13:Discard<br><br>If a user decides that they no longer want to track data for a hole they are playing, they can click on the shot information button and will be asked if they want to discard."
+                                                                }
+                                                                </script>
+                                                                <br>
+                                        
+                                                                <a onclick="myFunction16()">14:Discard AYS</a>
+                                                                <script>
+                                                                    function myFunction16() {
+                                                                      document.getElementById("myImg").src = "images/SketchMockups/16.png";
+                                                                      document.getElementById("DescriptionText").innerHTML = "14:Discard AYS<br><br>This screen requests confirmation that the user wants to discard the hole progress."
+                                                                    }
+                                                                    </script>
+                                                                    <br>  
+                                            
+                                                                    <a onclick="myFunction17()">15:Discard Shot</a>
+                                                                    <script>
+                                                                        function myFunction17() {
+                                                                          document.getElementById("myImg").src = "images/SketchMockups/17.png";
+                                                                          document.getElementById("DescriptionText").innerHTML = "15:Discard Shot<br><br>A user can discard a shot if added by mistake. This is done by clicking on the minus symbol. This is the menu that asks if the user is sure that they want to do this to avoid misclicks. "
+                                                                        }
+                                                                        </script>
+                                                                        <br>
+                                                                        <a onclick="myFunction18()">16:Holed out</a>
+                                                                        <script>
+                                                                            function myFunction18() {
+                                                                              document.getElementById("myImg").src = "images/SketchMockups/18.png";
+                                                                              document.getElementById("DescriptionText").innerHTML = "16:Holed out<br><br>When clicking the flag or hole out button, the menu requests the club that was used. It defaults to putter but can be set by clicking on the club which opens a scrollable options list."
+                                                                            }
+                                                                            </script>
+                                                                            <br>  
+                                                    
+                                                                            <a onclick="myFunction19()">17:Add Shot</a>
+                                                                            <script>
+                                                                                function myFunction19() {
+                                                                                  document.getElementById("myImg").src = "images/SketchMockups/19.png";
+                                                                                  document.getElementById("DescriptionText").innerHTML = "17:Add Shot<br><br>The user adds shots with the + button when they reach their ball. The system will track distance from the last shot and request the club that was used. This will help the system understand the players club recommendations."
+                                                                                }
+                                                                                </script>
+                                                                                <br>
+
+                                                                                <a onclick="myFunction20()">18:Add Shot Cont.</a>
+                                                                                <script>
+                                                                                    function myFunction20() {
+                                                                                      document.getElementById("myImg").src = "images/SketchMockups/20.png";
+                                                                                      document.getElementById("DescriptionText").innerHTML = "18:Add Shot Cont.<br><br>Add shot club selection"
+                                                                                    }
+                                                                                    </script>
+                                                                                    <br>
+
+                                                                                    <a onclick="myFunction21()">19:PM Menu</a>
+                                                                                    <script>
+                                                                                        function myFunction21() {
+                                                                                          document.getElementById("myImg").src = "images/SketchMockups/21.png";
+                                                                                          document.getElementById("DescriptionText").innerHTML = "19:PM Menu<br><br>This is the menu that is available by clicking on the top right menu icon."
+                                                                                        }
+                                                                                        </script>
+                                                                                        <br>
+                                                                            
+                                                                                        <a onclick="myFunction22()">20:Add Golfer</a>
+                                                                                        <script>
+                                                                                            function myFunction22() {
+                                                                                              document.getElementById("myImg").src = "images/SketchMockups/22.png";
+                                                                                              document.getElementById("DescriptionText").innerHTML = "20:Add Golfer<br><br>his is the add golfer menu. This allows a user to add golfer information or to scan another app users code to auto populate their information. They can also add the users ID manually."
+                                                                                            }
+                                                                                            </script>
+                                                                                            <br>
+                                        
+                                                                                        
+                                                                            
+                                                                                            <a onclick="myFunction23()">21:Add/Remove golfer</a>
+                                                                                            <script>
+                                                                                                function myFunction23() {
+                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/23.png";
+                                                                                                  document.getElementById("DescriptionText").innerHTML = "21:Add/Remove golfer<br><br>A user can add or remove a golfer in the middle of a round from the menu."
+                                                                                                }
+                                                                                                </script>
+                                                                                                <br>   
+                                                                            
+                                                                                                <a onclick="myFunction24()">22:Remove Golfer</a>
+                                                                                                <script>
+                                                                                                    function myFunction24() {
+                                                                                                      document.getElementById("myImg").src = "images/SketchMockups/24.png";
+                                                                                                      document.getElementById("DescriptionText").innerHTML = "22:Remove Golfer<br><br>The user has a choice of golfers to remove from the round."
+                                                                                                    }
+                                                                                                    </script>
+                                                                                                    <br>  
+                                                                            
+                                                                                                    <a onclick="myFunction25()">23:Remove Golfer AYS</a>
+                                                                                                    <script>
+                                                                                                        function myFunction25() {
+                                                                                                          document.getElementById("myImg").src = "images/SketchMockups/25.png";
+                                                                                                          document.getElementById("DescriptionText").innerHTML = "23:Remove Golfer AYS<br><br>Confirmation that you want to remove the golfer."
+                                                                                                        }
+                                                                                                        </script>
+                                                                                                        <br>
+                                                                                
+                                                                                                        <a onclick="myFunction26()">24:Change Golf Set</a>
+                                                                                                        <script>
+                                                                                                            function myFunction26() {
+                                                                                                              document.getElementById("myImg").src = "images/SketchMockups/26.png";
+                                                                                                              document.getElementById("DescriptionText").innerHTML = "24:Change Golf Set<br><br>A golfer may change a golf set that they are using mid round. Users may have similar sets and find that they accidently used the wrong one for the round. It is advised for accurate data that the user set the right set that they are using."
+                                                                                                            }
+                                                                                                            </script>
+                                                                                                            <br>  
+                                                                                    
+                                                                                                            <a onclick="myFunction27()">25:Scorecard</a>
+                                                                                                            <script>
+                                                                                                                function myFunction27() {
+                                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/27.png";
+                                                                                                                  document.getElementById("DescriptionText").innerHTML = "25:Scorecard<br><br>A user can view their scorecard for the round."
+                                                                                                                }
+                                                                                                                </script>
+                                                                                                                <br>
+                                                                                                                <a onclick="myFunction28()">26:Club Reccomendation</a>
+                                                                                                                <script>
+                                                                                                                    function myFunction28() {
+                                                                                                                      document.getElementById("myImg").src = "images/SketchMockups/28.png";
+                                                                                                                      document.getElementById("DescriptionText").innerHTML = "26:Club Reccomendation<br><br>If the user clicks on the club recommendation they will open up this dialog giving more detail around club seleciton options. They can also click to view all recorded distances."
+                                                                                                                    }
+                                                                                                                    </script>
+                                                                                                                    <br>  
+                                                                                            
+                                                                                                                    <a onclick="myFunction29()">27:Club Reccomendation cont.</a>
+                                                                                                                    <script>
+                                                                                                                        function myFunction29() {
+                                                                                                                          document.getElementById("myImg").src = "images/SketchMockups/29.png";
+                                                                                                                          document.getElementById("DescriptionText").innerHTML = "27:Club Reccomendation cont.<br><br>The user can click on the club reccomendations(26) again to get even more context around why the club recommendation that was made as well as some alternatives."
+                                                                                                                        }
+                                                                                                                        </script>
+                                                                                                                        <br>
+
+                                                                                                                        <a onclick="myFunction30()">28:CR Distances</a>
+                                                                                                                        <script>
+                                                                                                                            function myFunction30() {
+                                                                                                                              document.getElementById("myImg").src = "images/SketchMockups/30.png";
+                                                                                                                              document.getElementById("DescriptionText").innerHTML = "28:CR Distances<br><br>This is the list of all club distances that a user has recorded in the system. They can reach this menu by clicking Club Distances on the club recommendations menu."
+                                                                                                                            }
+                                                                                                                            </script>
+                                                                                                                            <br>
+
+
+                                                                                                                            <a onclick="myFunction31()">29:Current Hole</a>
+                                                                                                                            <script>
+                                                                                                                                function myFunction31() {
+                                                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/31.png";
+                                                                                                                                  document.getElementById("DescriptionText").innerHTML = "29:Current Hole<br><br>The user can get a view of the current hole by clicking on the distance button. This will also give a visual representation of the shots taken if the hole layout data exists."
+                                                                                                                                }
+                                                                                                                                </script>
+                                                                                                                                <br>
+                                                                                                                    
+                                                                                                                                <a onclick="myFunction32()">30:Finish Round</a>
+                                                                                                                                <script>
+                                                                                                                                    function myFunction32() {
+                                                                                                                                      document.getElementById("myImg").src = "images/SketchMockups/32.png";
+                                                                                                                                      document.getElementById("DescriptionText").innerHTML = "30:Finish Round<br><br>When a user finishes a round they'll have the chance to review the scorecard of each player that they marked. They can also fill out any hole that they may have missed before signing off."
+                                                                                                                                    }
+                                                                                                                                    </script>
+                                                                                                                                    <br>
+                                                                                
+                                                                                                                                    <a onclick="myFunction33()">31:Sign Card</a>
+                                                                                                                                    <script>
+                                                                                                                                        function myFunction33() {
+                                                                                                                                          document.getElementById("myImg").src = "images/SketchMockups/33.png";
+                                                                                                                                          document.getElementById("DescriptionText").innerHTML = "31:Sign Card<br><br>Like a real scorecard a user must sign the signature section before they can submit or complete the round. The submit round button will be greyed out until a signature is made. Users can cancel the signature with the x button."
+                                                                                                                                        }
+                                                                                                                                        </script>
+                                                                                                                                        <br>  
+                                                                                                                    
+                                                                                                                                  
+                                                                                                                    
+                                                                                                                                        <a onclick="myFunction34()">32:re-sign Card</a>
+                                                                                                                                        <script>
+                                                                                                                                            function myFunction34() {
+                                                                                                                                              document.getElementById("myImg").src = "images/SketchMockups/34.png";
+                                                                                                                                              document.getElementById("DescriptionText").innerHTML = "32:re-sign Card<br><br>A user may choose to redo their signature. They can clear it with the clear button on the top right."
+                                                                                                                                            }
+                                                                                                                                            </script>
+                                                                                                                                            <br>  
+                                                                                                                    
+                                                                                                                                            <a onclick="myFunction35()">33:Card Signed</a>
+                                                                                                                                            <script>
+                                                                                                                                                function myFunction35() {
+                                                                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/35.png";
+                                                                                                                                                  document.getElementById("DescriptionText").innerHTML = "33:Card Signed<br><br>The submit round button is now available to be pressed as the card has been signed."
+                                                                                                                                                }
+                                                                                                                                                </script>
+                                                                                                                                                <br>  
+                                                                                                                                                <br>  
+                                                                                                                                                <br>  
+                                                                                                                        
+                                                                                                                                                <b style ="color:white">Create Golf Set</b>
+                                                                                                                                                <br>  
+                                                                                                                                               
+
+
+                                                                                                                                                <a onclick="myFunction36()">34:Golf Bag Menu</a>
+                                                                                                                                                <script>
+                                                                                                                                                    function myFunction36() {
+                                                                                                                                                      document.getElementById("myImg").src = "images/SketchMockups/36.png";
+                                                                                                                                                      document.getElementById("DescriptionText").innerHTML = "34:Golf Bag Menu<br><br>From here users can view, edit, delete or create new golf bags/sets."
+                                                                                                                                                    }
+                                                                                                                                                    </script>
+                                                                                                                                                    <br>  
+                                                                                                                            
+                                                                                                                                                    <a onclick="myFunction37()">35:Create Set</a>
+                                                                                                                                                    <script>
+                                                                                                                                                        function myFunction37() {
+                                                                                                                                                          document.getElementById("myImg").src = "images/SketchMockups/37.png";
+                                                                                                                                                          document.getElementById("DescriptionText").innerHTML = "35:Create Set<br><br>This menu is where a user will add the name of the golf bag as well as add the golf clubs to the bag. The user should put in their recommended distance so the system will have something to recommend distance off of before data has been collated."
+                                                                                                                                                        }
+                                                                                                                                                        </script>
+                                                                                                                                                        <br>
+                                                                                                                                                        <a onclick="myFunction38()">36:Club Brand</a>
+                                                                                                                                                        <script>
+                                                                                                                                                            function myFunction38() {
+                                                                                                                                                              document.getElementById("myImg").src = "images/SketchMockups/38.png";
+                                                                                                                                                              document.getElementById("DescriptionText").innerHTML = "36:Club Brand<br><br>This menu allows a user to search for a particular model of golf club."
+                                                                                                                                                            }
+                                                                                                                                                            </script>
+                                                                                                                                                            <br>  
+                                                                                                                                    
+                                                                                                                                                            <a onclick="myFunction39()">37:Add Irons</a>
+                                                                                                                                                            <script>
+                                                                                                                                                                function myFunction39() {
+                                                                                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/39.png";
+                                                                                                                                                                  document.getElementById("DescriptionText").innerHTML = "37:Add Irons<br><br>As golfers will generally have multiple irons in the bag, this menu will allow them to add a full set of irons at once. They can choose the first and last iron in their bag"
+                                                                                                                                                                }
+                                                                                                                                                                </script>
+                                                                                                                                                                <br>
+
+                                                                                                                                                                <a onclick="myFunction43()">38:Too Many Clubs</a>
+                                                                                                                                                                <script>
+                                                                                                                                                                    function myFunction43() {
+                                                                                                                                                                      document.getElementById("myImg").src = "images/SketchMockups/43.png";
+                                                                                                                                                                      document.getElementById("DescriptionText").innerHTML = "38:Too Many Clubs<br><br>There is a limit of 14 clubs to a golf bag. If the user exceeds this in the iron assignment they will be blocked from adding with an error message indicating why."
+                                                                                                                                                                    }
+                                                                                                                                                                    </script>
+                                                                                                                                                                    <br>   
+                                                                                                                                                
+                                                                                                                                                                    <a onclick="myFunction44()">39:Add Existing Clubs</a>
+                                                                                                                                                                    <script>
+                                                                                                                                                                        function myFunction44() {
+                                                                                                                                                                          document.getElementById("myImg").src = "images/SketchMockups/44.png";
+                                                                                                                                                                          document.getElementById("DescriptionText").innerHTML = "39:Add Existing Clubs<br><br>As it's quite likely that golf sets will use the same clubs, a user can add pre created golf clubs from bags that they previously created."
+                                                                                                                                                                        }
+                                                                                                                                                                        </script>
+                                                                                                                                                                        <br>  
+                                                                                                                                                                        <br>  
+                                                                                                                                                                        <br>  
+
+
+
+
+                                                                                                                                                                        <b style ="color:white">Settings and other</b>
+                                                                                                                                                                        <br>
+
+
+
+                            <a onclick="myFunction6()">40:Settings</a>
+                            <script>
+                                function myFunction6() {
+                                  document.getElementById("myImg").src = "images/SketchMockups/6.png";
+                                  document.getElementById("DescriptionText").innerHTML = "40:Settings<br><br>This is the Settings menu."
+                                }
+                                </script>
+                                <br>  
+        
+                                <a onclick="myFunction7()">41:FAQ/Help</a>
+                                <script>
+                                    function myFunction7() {
+                                      document.getElementById("myImg").src = "images/SketchMockups/7.png";
+                                      document.getElementById("DescriptionText").innerHTML = "41:FAQ/Help<br><br>This is the help section. From here a user can look at common queries regarding the applocation, search for queries and also contact support."
+                                    }
+                                    </script>
+                                    <br>
+                                    <a onclick="myFunction8()">42:App Settings</a>
+                                    <script>
+                                        function myFunction8() {
+                                          document.getElementById("myImg").src = "images/SketchMockups/8.png";
+                                          document.getElementById("DescriptionText").innerHTML = "42:App Settings<br><br>From here a user can configure some of the application specific settings."
+                                        }
+                                        </script>
+                                        <br>  
+                
+                                        <a onclick="myFunction9()">43:Player Settings</a>
+                                        <script>
+                                            function myFunction9() {
+                                              document.getElementById("myImg").src = "images/SketchMockups/9.png";
+                                              document.getElementById("DescriptionText").innerHTML = "43:Player Settings<br><br>From here a user can modify the Player settings they previously configured in account creation."
+                                            }
+                                            </script>
+                                            <br>
+                                            
+                                            
+                                            <a onclick="myFunction10()">44:Edit Player Settings</a>
+                                            <script>
+                                                function myFunction10() {
+                                                  document.getElementById("myImg").src = "images/SketchMockups/10.png";
+                                                  document.getElementById("DescriptionText").innerHTML = "44:Edit Player Settings<br><br>This is shows the user editing the custom player settings"
+                                                }
+                                                </script>
+                                                <br>
+
+                                                                                                                                                                        
+                                                                                                                                                                                    <a onclick="myFunction48()">45:Previous Rounds</a>
+                                                                                                                                                                                    <script>
+                                                                                                                                                                                        function myFunction48() {
+                                                                                                                                                                                          document.getElementById("myImg").src = "images/SketchMockups/48.png";
+                                                                                                                                                                                          document.getElementById("DescriptionText").innerHTML = "45:Previous Rounds<br><br>A user can scan through and review previous rounds from this menu. They can also delete rounds."
+                                                                                                                                                                                        }
+                                                                                                                                                                                        </script>
+                                                                                                                                                                                        <br>  
+                                                                                                                                                                
+                                                                                                                                                                                        <a onclick="myFunction49()">46:PR-Filter</a>
+                                                                                                                                                                                        <script>
+                                                                                                                                                                                            function myFunction49() {
+                                                                                                                                                                                              document.getElementById("myImg").src = "images/SketchMockups/49.png";
+                                                                                                                                                                                              document.getElementById("DescriptionText").innerHTML = "<46:PR-Filter<br><br>A user can filter the rounds that appear with this menu."
+                                                                                                                                                                                            }
+                                                                                                                                                                                            </script>
+                                                                                                                                                                                            <br>
+                                                                                                                                                                                            <a onclick="myFunction50()">47:PR-Filtered</a>
+                                                                                                                                                                                            <script>
+                                                                                                                                                                                                function myFunction50() {
+                                                                                                                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/50.png";
+                                                                                                                                                                                                  document.getElementById("DescriptionText").innerHTML = "47:PR-Filtered<br><br>This is how the menu looks when the filter is applied."
+                                                                                                                                                                                                }
+                                                                                                                                                                                                </script>
+                                                                                                                                                                                                <br>  
+                                                                                                                                                                        
+                                                                                                                                                                                                <a onclick="myFunction51()">48:Review Round</a>
+                                                                                                                                                                                                <script>
+                                                                                                                                                                                                    function myFunction51() {
+                                                                                                                                                                                                      document.getElementById("myImg").src = "images/SketchMockups/51.png";
+                                                                                                                                                                                                      document.getElementById("DescriptionText").innerHTML = "48:Review Round<br><br>A user can scan through the scorecard of previous rounds. If hole numbers are highlighted in red they will contain hole/shot data and can be clicked into."
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                    </script>
+                                                                                                                                                                                                    <br>
+                                                                                                                                                                                                    <a onclick="myFunction52()">49: Hole Summary</a>
+                                                                                                                                                                                                    <script>
+                                                                                                                                                                                                        function myFunction52() {
+                                                                                                                                                                                                          document.getElementById("myImg").src = "images/SketchMockups/52.png";
+                                                                                                                                                                                                          document.getElementById("DescriptionText").innerHTML = "49: Hole Summary<br><br>A user can review holes from previous rounds by clicking into the hole from the scorecard(if the data exists)."
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        </script>
+                                                                                                                                                                                                        <br>  
+                                                                                                                                                                                
+                                                                                                                                                                                                        <a onclick="myFunction53()">50: Golfer Tag</a>
+                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                            function myFunction53() {
+                                                                                                                                                                                                              document.getElementById("myImg").src = "images/SketchMockups/53.png";
+                                                                                                                                                                                                              document.getElementById("DescriptionText").innerHTML = "50: Golfer Tag<br><br>The user can access their own golfer tag to be scanned by other users."
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                            </script>
+                                                                                                                                                                                                            <br>
+
+                                                                                                                                                                                                            <a onclick="myFunction54()">51:Player Summary</a>
+                                                                                                                                                                                                            <script>
+                                                                                                                                                                                                                function myFunction54() {
+                                                                                                                                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/54.png";
+                                                                                                                                                                                                                  document.getElementById("DescriptionText").innerHTML = "51:Player Summary<br><br>This menu lets the user choose some of the player summary information"
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                </script>
+                                                                                                                                                                                                                <br>
+                                                                                                                                                                                                                <a onclick="myFunction55()">52: Club Summary</a>
+                                                                                                                                                                                                                <script>
+                                                                                                                                                                                                                    function myFunction55() {
+                                                                                                                                                                                                                      document.getElementById("myImg").src = "images/SketchMockups/55.png";
+                                                                                                                                                                                                                      document.getElementById("DescriptionText").innerHTML = "52: Club Summary<br><br>A user can review all of the data relating to different golf clubs they have created and tracked data against. They can filter this data."
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                    </script>
+                                                                                                                                                                                                                    <br>  
+                                                                                                                                                                                            
+                                                                                                                                                                                                                    <a onclick="myFunction56()">53: Player Stats</a>
+                                                                                                                                                                                                                    <script>
+                                                                                                                                                                                                                        function myFunction56() {
+                                                                                                                                                                                                                          document.getElementById("myImg").src = "images/SketchMockups/56.png";
+                                                                                                                                                                                                                          document.getElementById("DescriptionText").innerHTML = "53: Player Stats<br><br>This is the menu to access different club type stats"
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                        </script>
+                                                                                                                                                                                                                        <br>
+
+                                                                                                                                                                                                                        <a onclick="myFunction57()">54: Driver Stats</a>
+                                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                                            function myFunction57() {
+                                                                                                                                                                                                                              document.getElementById("myImg").src = "images/SketchMockups/57.png";
+                                                                                                                                                                                                                              document.getElementById("DescriptionText").innerHTML = "54: Driver Stats<br><br>This section shows the user some interesting information about a particular club and their relationship with it."
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                            </script>
+                                                                                                                                                                                                                            <br>
+
+                                                                                                                                                                                                                            <a onclick="myFunction58()">55: Coaching</a>
+                                                                                                                                                                                                                            <script>
+                                                                                                                                                                                                                                function myFunction58() {
+                                                                                                                                                                                                                                  document.getElementById("myImg").src = "images/SketchMockups/58.png";
+                                                                                                                                                                                                                                  document.getElementById("DescriptionText").innerHTML = "55: Coaching<br><br>This gives a visual breakdown of a users strengths and weaknesses and highlights areas that require improvement."
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                </script>
+                                                                                                                                                                                                                                <br>
+                                                                                                                                                                                                                                <br>
+                                                                                                                                                                                                                                <br>
+
+
+
+
+
+
+    </leftPanel>
+   
+    <descriptionPanel style = "background-color: black;color:white" >
+      <H3 style = "color:white">What does this screen do?</H3>
+        <b id ="DescriptionText"><b>
+        </descriptionPanel>
+        
+</UISection>
+
+</body>
+
+

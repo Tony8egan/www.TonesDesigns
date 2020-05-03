@@ -1,0 +1,48 @@
+---
+title: Scope
+layout: Scope
+permalink: /Scope.html
+---
+
+
+Scope:
+
+Functional Spec & Content Requirements:
+
+F - User receives distance from point where they stand to where the hole is(also from and back of the green distance)
+C – Requires course/hole length data and GPS tracking
+
+F - User receives golf club recommendation 
+C – Will access user database to see club recommendation. The user will initially suggest their distance and the system will use algorithms to determine their average distance
+
+F - User can input a shot taken 
+C – Inputs shot data into database
+
+F - User can input playing partners score for a hole 
+C – Inputs shot data into database
+
+
+F - User can undo a shot that they mistakenly input
+
+F - User can delete holes later on due to misinput 
+
+F- Hole coaching tool will give users information about the hole and shot they are playing. It will give them recommendations on how to play the next shot based on hole and golfer statistics. It will give feedback such as 
+-	Percentage of golfers to hit the green from point of play
+-	Recommendations to lay up or go for the green 
+-	Recommendations on where best to aim your shot 
+C – Will pull data from Database of all golfers on that course as well as the golfer using the app
+
+ F- The phone will vibrate when walking away from the hole when marking another players card as a reminder to update their score
+C - Requires course/hole length data and GPS tracking
+
+F – After a round a user can select – Submit Round which will update their own playing data to the system
+C - Access to internet and Database
+
+F – User creates an account so that their information is stored and they can log in on separate devices. Data can be stored on the Database
+C – User provides Email, Full name, Password, DOB, Password
+
+F – Player Setup. Player provides golf related information. Can be updated via setup. 
+C – User Provides Handicap, what’s in the bag(users equipment) and distances, Height, Weight 
+
+
+F – When a round is in play, the app defaults to the in golf round mode when opened. 

@@ -1,0 +1,308 @@
+---
+---
+
+
+<body style = "margin:0;background-color: white">
+
+<script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  </script>
+
+<script>
+function toggleText() {
+  var text = document.getElementById("PersonalCaddy");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+
+  
+function toggleNav() {
+  var element = document.getElementById("mySidenav");
+  if (element.style.width == "250px") {
+      element.style.width = "0px";
+  } else {
+      element.style.width = "250px";
+  }
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+
+a, p, ul, ol li, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Oxanium' ;
+       }
+
+
+
+
+.main
+{
+display:inline-block;
+}
+.TopNavPanel
+{
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.bar1, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bar2
+{
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float:left;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 65px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.TextSection
+{
+    
+  
+  width:80%;
+  
+  text-align: center;
+  background-color: #20292f;
+  
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:0;
+  padding:20px;
+  display:inline-block;
+  border-color:black;
+        border-style:solid;
+        border-bottom: 0px;
+  
+}
+
+.TextSection2
+{
+  width:30%;
+  padding: 70px 0;
+  text-align: center;
+  float:right;
+  font-size:25px;
+  
+}
+.TextSection3
+{
+    
+  text-align: center;
+  width:100%;
+  margin-top:0;
+  margin-bottom:0;
+  color:white;
+  padding-top:20px;
+  padding-bottom:50px;
+  background-color: black;
+  display:inline-block;
+  
+  
+}
+
+
+
+.ImageOfStrucutre
+{
+height:600px;
+width:90%;
+margin-left:100px;
+}
+
+img
+{
+    
+    font-family: 'Open Sans';
+    margin-right:5px;
+    margin-top:75px;
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  display:block;
+  float:left;
+
+}
+
+
+
+</Style>
+
+
+
+
+
+
+<main>
+<div class="TopNavPanel">
+<div class="container" onclick="myFunction(this);toggleNav()">
+    <div class="bar1" style = "margin-top:20px;margin-left:20px;cursor:pointer"></div>
+    <div class="bar2" style = "margin-left:20px;cursor:pointer"></div>
+    <div class="bar3" style = "margin-left:20px;cursor:pointer;"></div>
+  </div>
+  <H2 style="text-align:center;color:white">Tones Designs</H2>
+</div>
+
+
+<div id="mySidenav" class="sidenav" style ="color: white;background-image: url('../images/teal.jpeg');">
+    
+  
+  <a href="http://127.0.0.1:4000/Home.html", style ="text-decoration: none;color:white">Home</a>
+  <a href="#AboutMe" style ="text-decoration: none;color:white"">About Me</a>
+  <a style ="text-decoration: none;color:white;transition-delay: 2s;", onclick="toggleText()">Projects</a>
+  <a href="http://127.0.0.1:4000/Surface.html", id="PersonalCaddy", style ="text-decoration:none;font-size:18px;color:white;margin-left: 20px;display: none;">Personal Caddy</a>
+  <a href="#Contact", style ="text-decoration: none;color:white">Contact</a>
+  
+  </navBar>
+</div>
+
+<div class="ImageOfStrucutre" style="color:Black">
+
+  <img src="images/Wedding.jpg" alt="Lost image" width="21%" height="80%" style="object-fit: cover;">
+  <img src="images/Profo.jpeg" alt="Lost image" width="21%" height="80%" style="object-fit: cover;">
+  <img src="images/Glen.jpg" alt="Lost image" width="21%" height="80%" style="object-fit: cover;">
+  
+
+
+
+<div class="TextSection2">
+<p> Welcome to Tones Designs. I'm Tony Egan and I've created this website in order to showcase my interest and progress in user experience and interface deisgn. I've been working in the tech industry for over 5 years in Customer Success roles and now intend to move into UX and UI design. </p>
+</div>
+
+</div>
+
+<div id="AboutMe">
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+</div>
+
+
+    <div class="TextSection" style="color:white;" >
+
+     
+  
+      
+      
+    
+      
+      <h1>About Me</h1>
+    
+        <p> Below is a brief summary of what I've been up to up until now.</p>
+    <br>
+        <p>1993</p>
+        <p>Born</p>
+        
+        <span style='font-size:30px;'>&#8659;</span>
+        <p><b> 1997</b></p>
+        <p>School - Clonnmoney</p>
+        <span style='font-size:30px;'>&#8659;</span>
+        <p><b>2005</b></p>
+        <p>Secondary School - St Caimins</p>
+        <span style='font-size:30px;'>&#8659;</span>
+        <p><b>2010</b></p>
+        <p>University Of Limerick - BSc. Multimedia and Computer Games Design</p>
+        <span style='font-size:30px;'>&#8659;</span>
+        <p><b>2014</b></p>
+        <p>Graduated</p>
+        <span style='font-size:30px;'>&#8659;</span>
+        <p><b>2015</b></p>
+        <p>Worked as call center support for 3 Networks</p>
+        <span style='font-size:30px;'>&#8659;</span>
+        <p><b>2015</b></p>
+        <p>Worked as Application Support engineer at AIB</p>
+        <span style='font-size:30px;'>&#8659;</span>
+        <p><b>2016</b></p>
+        <p>Worked as Sr. Tech support Engineer and Implementation Manager at Upland Altify</p>
+        <span style='font-size:30px;'>&#8659;</span>
+        <p><b>2020</b></p>
+        <p>Created this website</p>
+    </div>
+
+    
+<div class="TextSection3">
+
+        <h1 id="Contact">Contact</h1>
+        <p>Phone - 086-2086905</p>
+        <p>Email - Tony8egan@hotmail.com</p>
+        <p>Linkedin - https://ie.linkedin.com/in/tony-egan-76a13683</p>
+    
+       
+    </div>
+    
+</main>
+</body>
+
+

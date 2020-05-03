@@ -1,0 +1,13 @@
+---
+title: "Strategy"
+layout: Strategy
+date:   2020-02-29 12:59:50 +0000
+categories: jekyll update
+permalink: /Strategy.html
+---
+
+Strategy: Personal Caddie is intended to improve the golfing experience by using pre collected data to advise golfers on how best to approach shots on the course as well as what areas of their game needs improvement on the range. Personal caddie also centralises the administrative tasks of score keeping and allows a user to track the score of both themselves and/or their playing partners. Personal Caddie aims to become an essential tool and the industry standard of all golfers and courses. 
+
+User: The user will initially benefit from this app by receiving the distance from where they stand to the hole. They will be able to track each shot that they take with ease which will then be collated on the system to get an average distance reading for each club in the bag. Eventually the golfer will be able to address the ball with confidence as Personal Caddie recommends the club that they should be using. The system will also have an advanced coaching tool which will give further information regarding the size and speed of the greens. Personal Caddie will allow the golfer to track their score for the round as well as the score of other golfers. Personal Caddie aims to be super easy to use and understand so that golfers don’t waste time on the course navigating a cumbersome UI. 
+
+Business: The business will provide an application that will be popular with golfers. The aim will be for this system to be the norm and to be used at all golf clubs as a means of score tracking. The popularity will result in course and golfer data being available for coaches, manufacturers and a premium service for golfers will give more in depth analysis of their game and the course that their playing. This will also provide potential for in app advertising. Golfers will be incentivised to register their golf equipment within the app. Golf companies can then promote their products within the application based on performance that golfers have with their equipment 

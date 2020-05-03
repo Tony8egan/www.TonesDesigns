@@ -1,0 +1,239 @@
+---
+---
+
+
+<body style = "margin:0;background-image: url('../images/GolfBackground.jpeg');background-position:center;">
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
+  <script>
+    function toggleText() {
+      var text = document.getElementById("PersonalCaddy");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+    </script>
+  
+  <script>
+  
+    
+  function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "250px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "250px";
+    }
+  }
+  </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+.bar1, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+}
+
+.bar2
+{
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float:left;
+  z-index: 2;
+  position: fixed;
+  
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+ImageOfStrucutre
+{
+    width:80%;
+    float:right;
+    font-family: 'Open Sans';
+
+
+}
+
+a {
+  margin-left: 3px;
+  
+}
+
+a:hover {
+    cursor: pointer;
+    color:red;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+    
+
+    LeftPanel
+    {
+        float:left;
+        width: 20%;
+        display:block;
+        height:100%;
+        padding-left: 5px;
+        overflow: auto;
+      white-space: nowrap;
+
+    }
+    DescriptionPanel
+    {
+        float:right;
+        width: 28.25%;
+        display:block;
+        height:100%;
+       padding-left: 5px;
+        
+
+    }
+
+    UIsection
+    {
+        
+        float:left;
+        width: 45%;
+        height: 600px;
+        display:block;
+       margin: auto;
+       margin-left:33%;
+        margin-top:100px;
+       
+    }
+
+    designNav{
+    float: right;
+    Width: 54%;
+    height: 5%;
+    background-color: black;
+    padding-left:20px;
+    border-bottom-left-radius: 20px;
+}
+
+designNav a{
+ 
+ text-decoration: none;
+ color:white;
+}
+
+designNav a:hover{
+ opacity: 0.5;
+ color:white;
+}
+
+
+ 
+    a,b, p, ul, ol li, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Oxanium' ;
+        
+       }
+</style>
+
+<div class="container" onclick="myFunction(this);toggleNav()">
+  <div class="bar1" style = "margin-top:20px;margin-left:20px;cursor:pointer"></div>
+  <div class="bar2" style = "margin-left:20px;cursor:pointer"></div>
+  <div class="bar3" style = "margin-left:20px;cursor:pointer;"></div>
+</div>
+
+
+<designNav>
+  <b style ="color:white;text-align: center; font-size:25px;"> Personal Caddy</b>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Surface.html", style ="text-align: center; font-size:25px;"> Surface</a>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Skeleton.html", style ="text-align: center; font-size:25px;">Skeleton</a>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Structure.html", style ="color:red;text-align: center; font-size:25px;opacity:1">Structure</a>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Scope.html", style ="text-align: center; font-size:25px;">Scope</a>
+  <a style ="color:white;font-size:25px;"> | </a>
+  <a href ="http://127.0.0.1:4000/Strategy.html", style ="text-align: center; font-size:25px;">Strategy</a>
+  </designNav>
+
+
+
+
+
+<div id="mySidenav" class="sidenav" style ="color: white;background-image: url('../images/teal.jpeg');">
+    
+    <h2>Tones Designs</h2>
+    <a href="http://127.0.0.1:4000/Home.html", style ="text-decoration: none;color:white">Home</a>
+    <a href="http://127.0.0.1:4000/Home.html#AboutMe", style ="text-decoration: none;color:white">About Me</a>
+    <a style ="text-decoration: none;color:white;transition-delay: 2s;", onclick="toggleText()">Projects</a>
+    <a href="http://127.0.0.1:4000/Surface.html", id="PersonalCaddy", style ="text-decoration:none;font-size:18px;color:white;margin-left: 20px;display: none;">Personal Caddy</a>
+    <a href="http://127.0.0.1:4000/Home.html#AboutMe", style ="text-decoration: none;color:white">Contact</a>
+    
+    </navBar>
+  </div>
+
+
+    
+
+<ImageOfStrucutre>
+  <br>
+    <img src="images/Golf.png" alt="Lost image" width="900" height="710">
+</ImageOfStrucutre>
+
+</body>
+
+

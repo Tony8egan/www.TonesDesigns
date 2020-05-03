@@ -1,0 +1,197 @@
+---
+---
+<body style ="margin:0;background-image: url('../images/london.jpg');">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+
+
+    main{
+    float: left;
+    width: 60%;
+    color: white;
+    }
+
+
+
+
+
+.TopNav
+{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+ 
+.TextSection
+{
+    
+  float:right;
+  
+}
+ 
+    a, p, ul, ol li, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Oxanium' ;
+        
+       }
+
+
+       .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.bar1, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.bar2
+{
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+ 
+}
+
+
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+<div class ="TopNav">
+  
+
+
+  <div class="container" onclick="openNav()">
+    <div class="bar1" style = "margin-top:20px;margin-left:20px;cursor:pointer"></div>
+    <div class="bar2" style = "margin-left:20px;cursor:pointer"></div>
+    <div class="bar3" style = "margin-left:20px;cursor:pointer;"></div>
+
+    <H1>Tones Designs</H1>
+    </div>
+    
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+</div>
+
+
+
+
+
+
+
+<div id="mySidenav" class="sidenav" style ="color: white;background-image: url('../images/teal.jpg');">
+    
+    <h2>Tones Designs</h2>
+    <a href="http://127.0.0.1:4000/Home.html", style ="text-decoration: none;color:white">Home</a>
+    <a href="http://127.0.0.1:4000/Page1.html", style ="text-decoration: none;color:rgb(129, 173, 190)">About Me</a>
+    <a href="http://127.0.0.1:4000/Surface.html", style ="text-decoration: none;color:white">Projects</a>
+    <a href="http://127.0.0.1:4000/Contact.html", style ="text-decoration: none;color:white">Contact</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">CLOSE </a>
+    </navBar>
+  </div>
+
+  
+
+
+<div class="TextSection" style="color:white">
+
+  
+  
+  <p> Welcome to Tones Designs. I've created this website as a means of demonstrating my interest and progress in user experience and interface deisgn.</p>
+  
+ 
+
+  
+  <h1>About Me</h1>
+
+    <p> My name's Tony Egan and below is a brief summary of what I've been up to up until now.</p>
+
+    <p>Born - 1993</p>
+    <p>School - Clonnmoney</p>
+    <p>Secondary School - St Caimins</p>
+    <p>University - University Of Limerick< - Multimedia and Computer Games Design</p>
+    <p>Graduated - 2014</p>
+    <p>Worked as call center support for 3 Networks</p>
+    <p>Worked as Application Support at AIB</p>
+    <p>Worked as tech support Engineer and Implementation Manager at Upland Altify</p>
+    <p>created this website</p>
+
+
+
+
+    <h1>Contact</h1>
+
+    <p>Email - Tony8egan@hotmail.com</p>
+    <p>Phone - 086-2086905</p>
+    <p>Linkedin - </p>
+
+   
+</div>
+ 
+
+
+</body>
