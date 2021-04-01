@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: "Projects"
-layout: layouts/Projects
-permalink: /Projects.html
+layout: Projects
+permalink: Projects.html
 ---
