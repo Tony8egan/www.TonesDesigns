@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Projects</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+        
+        <link rel="stylesheet" href="css/Styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
+       
+   </head>
+
+    <body style ="background-color:rgb(21, 165, 181);">
+        <header>
+          <nav class="navbar fixed-top">
+            <div class="banner" onclick="myFunction(this);toggleNav()" id ="Xbutton">
+                <div class="bar1" style = "margin-top:5px;margin-left:5px;cursor:pointer"></div>
+                <div class="bar2" style = "margin-left:5px;cursor:pointer"></div>
+                <div class="bar3" style = "margin-left:5px;cursor:pointer;"></div>
+            </div>
+        
+              <H2 style="color:white;text-align:center;">Projects</H2>
+              
+              
+          </nav>
+        </header>
+
+
+        <div id="mySidenav" class="sidenav" style ="color: white;background-image: url('/images/teal.jpeg');">
+    
+          
+          <a href="Home.html" class ="hovereffect" style ="text-decoration:none;">Home</a>
+          <a href="/Home.html#AboutMe" class ="hovereffect" style ="text-decoration:none;" onclick="myFunction(Xbutton);toggleNav()">About Me</a>
+          <a href="Projects.html" class ="hovereffect" style ="text-decoration:none;">Projects</a>
+          <a href="/Home.html#Contact" class ="hovereffect" style ="text-decoration:none;" onclick="myFunction(Xbutton);toggleNav()">Contact</a>
+          
+          
+        </div>
+
+        
+        <div class= "container">
+          <div class="row">
+
+    <div class="col-sm-1"></div>
+
+            <div class="col-sm-5" style="margin-top:35px">
+              
+                <a href="/Photography.html" class ="imageButton">
+                  <img src="images/PhotographyIcon.jpg" alt="Lost image" style="object-fit: cover;border: 2px solid black;border-radius: 2px;background-color: black">
+                  <H2 class="centered imageButtonText">Photography</H2>
+                </a>
+            </div>
+            <div class="col-sm-5"  style="margin-top:35px">
+              <a href="/AudioStory.html" class ="imageButton">
+              <img src="images/Audiostory.jpg" alt="Lost image" style="object-fit: cover;border: 2px solid black;border-radius: 2px;background-color: black">
+              <H2 class="centered imageButtonText" style ="text-align: center;">Audio Story</H2>
+            </a>
+            </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1"></div>
+
+            <div class="col-sm-5"  style="margin-top:35px">
+              <a href="/ImpulseDetector.html" class ="imageButton">
+              <img src="images/ImpulseDetector.jpg" alt="Lost image" style="object-fit: cover;border: 2px solid black;border-radius: 2px;background-color: black">
+              <H2 class="centered imageButtonText" style ="text-align: center;">Impulse Detector</H2>
+            </a>
+            
+            </div>
+            <div class="col-sm-5"  style="margin-top:35px">
+              <a href="/Blog.html" class ="imageButton">
+              <img src="images/BlogPic.jpg" alt="Lost image" style="object-fit: cover;border: 2px solid black;border-radius: 2px;background-color: black">
+              <H2 class="centered imageButtonText" style ="text-align: center;">Blog</H2>
+            </a>
+            
+            </div>
+    
+</div> 
+<br>
+    <br>
+    <br>
+    <br>
+<br>
+</div>
+
+
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
+  
+ 
+  
+
+
+
+  <script>
+  
+    
+  function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "330px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "330px";
+    }
+  }
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+
+</body>
+</html>
