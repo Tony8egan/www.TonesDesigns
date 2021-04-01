@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Projects</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+        
+        <link rel="stylesheet" href="css/Styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
+       
+</head>
+<body style ="background-color: #97c98d;">
+
+  <header>
+    <nav class="navbar fixed-top">
+      <div class="banner" onclick="myFunction(this);toggleNav()" id ="Xbutton">
+          <div class="bar1" style = "margin-top:5px;margin-left:5px;cursor:pointer"></div>
+          <div class="bar2" style = "margin-left:5px;cursor:pointer"></div>
+          <div class="bar3" style = "margin-left:5px;cursor:pointer;"></div>
+      </div>
+  
+        <H2 style="color:white;text-align:center;"><a href="/Projects.html">Impulse Detector</a></H2>
+        
+        
+    </nav>
+  </header>
+
+  
+  <div id="mySidenav" class="sidenav" style ="color: white;background-image: url('/images/teal.jpeg');">
+    
+        
+    <a href="Home.html" class ="hovereffect" style ="text-decoration:none;">Home</a>
+    <a href="/Home.html#AboutMe" class ="hovereffect" style ="text-decoration:none;" onclick="myFunction(Xbutton);toggleNav()">About Me</a>
+    <a href="Projects.html" class ="hovereffect" style ="text-decoration:none;">Projects</a>
+    <a href="/Home.html#Contact" class ="hovereffect" style ="text-decoration:none;" onclick="myFunction(Xbutton);toggleNav()">Contact</a>
+    
+    
+  </div>
+
+<div class ="container">
+  
+  
+  <div class="row" style="margin-top:30px;">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-9">
+        <H4 style ="color:black">Impulse Detector</H4>
+      <p style ="color:black"  class ="desctiptiveText">This is a project I designed and built for a 
+        Physical computing module with fellow student Vinuta Madhukar 
+        while studying Interaction and experience design in UL. 
+        Using an Arduino Uno, we created 
+        an impulse detector. A device that reads your level of arousal and 
+        significant increases of arousal in order to notify you or remind you to 
+        consider your emotional state, especially when making decisions. </p>
+        <br>
+     <p style ="color:black"  class ="desctiptiveText">There are two important factors to consider in understanding emotion, 
+        Valence and Arousal. Valence refers to the quality of emotion that a person is feeling, whether it's a positive or negative
+        experience. Arousal refers to the intensity of an emotion. When you combine the two you start to get more quantitative
+    ideas of an emotion that a person is feeling. During our research for this project, we found scientific studies supporting that 
+    humans are more inclined to make impulsive decisions when they are in a state of heightened arousal, regardless of Valence.</p>
+    
+    
+
+  <br>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-7">
+        <img class = "img-fluid" src="images/Valence.png" alt="Lost image" style="object-fit: cover;margin-top:20px;border: 2px solid black;border-radius: 2px;background-color: black">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+    </div>
+    <br>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10">
+        <p style ="color:black"  class ="desctiptiveText">When a person is in a heightened state of arousal, there are changes
+            in their skin conductivity. The skin conductance response, also known as the electrodermal response or galvanic skin response, is the phenomenon that the skin momentarily becomes a better conductor of electricity when either 
+            external or internal stimuli occur that are physiologically arousing. These changes can be detected by a galvanic skin response sensor. 
+            For this project, we used home made GSR sensors and an arduino Uno to build our 
+           own Impulse Detector.</p>
+
+    </div>
+    <div class="col-sm-2"></div>
+  <div class="col-sm-7">
+    
+    <img class = "img-fluid" src="images/Device.png" alt="Lost image" style="object-fit: cover;margin-top:20px;border: 2px solid black;border-radius: 2px;background-color: black">
+    <br>
+    <br>
+    <br>
+</div>
+<div class="col-sm-3"></div>
+<div class="col-sm-2"></div>
+<div class="col-sm-7">
+    
+    <img class = "img-fluid" src="images/Circuit.png" alt="Lost image" style="object-fit: cover;margin-top:20px;border: 2px solid black;border-radius: 2px;background-color: black">
+
+    <br>
+<br>
+<br>
+<br>
+</div>
+<div class="col-sm-3"></div>
+    
+
+    
+
+ 
+    
+  
+
+  <br>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <div class ="video-container center">
+    
+      <iframe width="750" height="500" src="https://www.youtube.com/embed/DjyxY6hlArw">
+      </iframe>
+    </div>
+    <br>
+    <br>
+    <br>
+    </div>
+</div>
+</div>
+
+
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
+  
+  
+  
+
+
+
+  <script>
+  
+    
+  function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "330px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "330px";
+    }
+  }
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
+  
+
