@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+  
+ p, ul, ol li, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oxanium' ;
+ }
+ a
+ {
+  color:inherit;
+  text-decoration: none;
+  transition: 0.35s;
+ }
+
+ a:hover
+ {
+  color:rgb(235, 88, 235);
+  text-decoration: none;
+ }
+
+
+ html
+
+{
+  width:100%;
+  overflow-x:hidden;
+}
+
+img {
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+body
+{
+  overflow-x:hidden;
+}
+
+.imageButtonText
+{
+  background-color: rgba(0, 0, 0, 0.639);
+  padding:4px;
+}
+
+.imageButton
+{
+  transition: all 0.65s;
+  color: white;
+  
+  
+}
+
+.imageButton:hover{
+
+  opacity: 0.80;
+  color:rgb(235, 88, 235);
+  
+}
+
+.hovereffect
+{
+  color:white;
+  transition: 0.65s;
+}
+
+.hovereffect:hover{
+
+  color: black;
+  
+}
+
+.container {
+  width:100%;
+  cursor: pointer;
+  padding-top: 16px;
+  margin-top: 30px;
+  
+  
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content:center;
+  
+}
+
+.banner {
+  overflow: hidden;
+  float:left;
+  cursor: pointer;
+  display: block;
+}
+
+.navbar
+{
+  background-color: #333;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  z-index: 2;
+  
+}
+
+.TopNavPanel
+{ 
+
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.bar1, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .bar2
+  {
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    
+  }
+
+ 
+
+  .TextSection
+  {
+    text-align: center;
+    background-color: #20292f;
+   color:white;
+    
+          border-style:solid;
+          border-bottom: 0px;
+          padding:20px;
+    
+  }
+
+  .TextSection3
+{
+  text-align: center;
+  background-color: black;
+  color:white;
+  padding-bottom:50px;
+  border-style:solid;
+  border-color:black;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 65px;
+  font-size: larger;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.desctiptiveText
+{
+  font-family: 'Titillium Web', sans-serif;
+}
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+
+
+
+  
+ 
