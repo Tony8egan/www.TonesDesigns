@@ -1,5 +1,0 @@
----
-title: Contact
-layout: Contact
-permalink: /Contact.html
----

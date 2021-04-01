@@ -1,5 +1,0 @@
----
-title: Skeleton
-layout: Skeleton
-permalink: /Skeleton.html
----
