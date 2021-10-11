@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Projects</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/Styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
+        <link rel="icon" type="image/png" href="images/TD2.png">
+        <link rel="shortcut icon" type="image/png" href="images/TD2.png">
+       
+
+</head>
+<style>
+  body
+  {
+    background-color: #e3acee;
+    background-image: linear-gradient(to bottom right, #9B05BB, #3f2455);
+  }
+  </style>
+<body style ="background-color: #e3acee;">
+
+  <header>
+    <nav class="navbar fixed-top">
+      <div class="banner" onclick="myFunction(this);toggleNav()" id ="Xbutton">
+          <div class="bar1" style = "margin-top:5px;margin-left:5px;cursor:pointer"></div>
+          <div class="bar2" style = "margin-left:5px;cursor:pointer"></div>
+          <div class="bar3" style = "margin-left:5px;cursor:pointer;"></div>
+      </div>
+  
+        <H2 style="color:rgb(255, 255, 255);text-align:center;"><a href="/Projects.html">Audio Story</a></H2>
+        
+        
+    </nav>
+  </header>
+
+  
+  <div id="mySidenav" class="sidenav" style ="color: rgb(255, 255, 255);background-image: url('/images/teal.jpeg');">
+    
+          
+    
+    <a href="Home.html" class ="hovereffect" style ="text-decoration:none;">Home</a>
+    <a href="/Home.html#AboutMe" class ="hovereffect" style ="text-decoration:none;" onclick="myFunction(Xbutton);toggleNav()">About Me</a>
+    <a href="Projects.html" class ="hovereffect" style ="text-decoration:none;">Projects</a>
+    <a href="/Home.html#Contact" class ="hovereffect" style ="text-decoration:none;" onclick="myFunction(Xbutton);toggleNav()">Contact</a>
+    
+    
+  </div>
+
+
+
+  <div class="row">
+    
+        
+          
+    <div class="col-sm-12"  style="height: 390px;text-align: center; background-image: url('/images/Audiostory3.png');background-position: center;background-size: cover;background-repeat: no-repeat;">
+    
+      <br>
+     <br>
+     <br>
+     <br>
+     <br>
+          <H1 style ="color:rgb(255, 255, 255);padding-left: 5px;padding-right: 5px;font-weight: 100;">Audio Story</H1>
+      
+    </div>
+  
+  
+  
+ 
+  </div>
+  <div class="row" style="background-color:white;padding: 20px; padding-bottom: 35px">
+    <div class="col-sm-1" ></div>
+  <div class="col-sm-7" >
+      <H3 style ="color:black">Background</H3>
+      <hr>
+      
+  <p style ="color:black; " >This is an Audio story that I created during my first semester
+    studying Interaction and Experience design at UL. The task for this project was to create a story using sound effects
+  with no dialogue. I used Audacity to create this story and soundsamples found on freesound.org.
+   
+      </p>
+  <br>
+  <br>
+
+</div>
+
+
+<div class="col-sm-4" ></div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+  <div class="row" style ="margin-top:50px;padding: 20px;">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3">
+      
+      <H3 style ="color:white">Audio Story</H3>
+      
+     </div>
+    
+      <div class="col-sm-4">
+        
+  <div class ="audio-container">
+    
+
+  <audio controls >
+      <source src="Audio/BankRobbery.ogg" type="audio/ogg">
+      <source src="Audio/BankRobbery.mp3" type="audio/mpeg">
+    FAILED TO LOAD
+    </audio>
+    
+    
+    </div>
+    <br>
+  <br>
+  <br>
+  <br>
+
+    </div>
+    </div>
+     
+
+
+
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
+  
+  
+  
+
+
+
+  <script>
+  
+    
+  function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "330px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "330px";
+    }
+  }
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
+  
+
