@@ -16,6 +16,108 @@
 
 
 </head>
+<style>
+
+body
+{
+  background:rgb(244, 244, 244);;   /*rgb(244, 244, 244)*/
+  
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #F45B69;
+  padding: 100px 0;
+}
+
+
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #20292f;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+}
+
+
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #1c7c8e3c;
+  position: relative;
+margin: 0 auto;
+}
+
+
+
+
+
+
+
+.frame
+{
+  background: #1c7c8e3c;
+width:250px;
+border-radius: 10px;
+position: relative;
+margin: 0 auto;
+padding-top: 11px;
+padding-bottom: 2px;
+padding-left: 5px;
+padding-right: 5px;
+
+
+
+  
+}
+
+
+
+
+
+
+
+  </style>
 <body>
 <header>
   
@@ -51,7 +153,7 @@
     <div class="col-sm-4" style="font-size: 20px;margin-top:20px;">
       <br>
       <div id ="test">
-      <H1 style ="font-family: 'Lato', sans-serif;font-size: 54px; font-weight: 300;"> Hi<a>, my name is Tony Egan</a><a2> and I'm a UX/UI Designer</a2> </H1>
+      <H1 style ="font-family: 'Lato', sans-serif;font-size: 54px; font-weight: 300;color:rgb(0, 0, 0)"> Hi<a>, my name is Tony Egan</a><a2> and I'm a UX/UI Designer</a2> </H1>
       <br>
     </div>
     </div>
@@ -80,9 +182,9 @@
       <div class="col-md-1">
       </div>
       <div class="col-md-10">
-    <div class="TextSection">
+    <div class="TextSection" style ="color:rgb(233, 233, 233)">
       <br>
-        <h1>About Me</h1>
+        <h1 style ="color:rgb(255, 255, 255)">About Me</h1>
     <br>
         <p style ="margin-left: 10%;margin-right: 10%;text-align: justify;">My name is Tony and I'm from County Clare in <a style ="color:#68f441">Ireland</a>. I studied a bachelor of science in multimedia and computer 
           games design at the University of Limerick and 
@@ -104,80 +206,137 @@
       <br>
       <br>
       
-    <p style ="color:#68f441"><strong>1993</strong></p>
-        <p>Born</p>
-        
+      <section class="timeline">
+  <ul>
+    
+    
+      <br>
+      <div class="frame">
+    <time style ="color:#68f441">1993</time>  
+    <p>Born</p>
+    </div>
+    
+    <li>
+      <br>
+      <br>
+    </li>
+    <br>
+    <div class="arrow-up"></div>
+    <div class="frame">
+      <time style ="color:#68f441">1997</time>  
+      <p>School - Clonnmoney</p>
+      </div>
+    
+     
+      <li>
         <br>
-        <span style='font-size:30px;'>&#8659;</span>
         <br>
-        <br>
-        <p style ="color:#68f441"><strong>1997</strong></p>
-        <p>School - Clonnmoney</p>
-        
-        <br>
-        <span style='font-size:30px;'>&#8659;</span>
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2005</strong></p>
+      </li>
+      <br>
+      <div class="arrow-up"></div>
+      <div class="frame">
+        <time style ="color:#68f441">2005</time>  
         <p>Secondary School - St Caimins</p>
+        </div>
         
+        <li>
+          <br>
+          <br>
+        </li>
         <br>
-        <span style='font-size:30px;'>&#8659;</span>
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2010</strong></p>
-        <p>University Of Limerick - BSc. Multimedia and Computer Games Design</p>
-        
-        <br>
-        <span style='font-size:30px;'>&#8659;</span>
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2014</strong></p>
-        <p>Graduated</p>
-        
-        <br>
-        <span style='font-size:30px;'>&#8659;</span>
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2015</strong></p>
-        <p>Worked as call center support for 3 Networks</p>
-        
-        <br>
-        <span style='font-size:30px;'>&#8659;</span>
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2015</strong></p>
-        <p>Worked as Application Support engineer at AIB</p>
-        
-        <br>
-        <span style='font-size:30px;'>&#8659;</span>
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2016</strong></p>
-        <p>Worked as Sr. Tech support Engineer and Implementation Manager at Upland Altify</p>
-        
-        <br>
-        <span style='font-size:30px;'>&#8659;</span>
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2020</strong></p>
-        <p>Created this website</p>
-        <br>
-        
-        <span style='font-size:30px;'>&#8659;</span>
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2020</strong></p>
-        <p>University Of Limerick - Masters in Interaction and Experience Design</p>
-        <br>
-      <span style='font-size:30px;'>&#8659;</span>
-      
-        <br>
-        <br>
-        <p style ="color:#68f441"><strong>2021</strong></p>
-        <p>University Of Limerick - Masters in Interaction and Experience Design</p>
-        <br>
-        <br>
+        <div class="arrow-up"></div>
+        <div class="frame">
+          <time style ="color:#68f441">2010</time>  
+          <p>University Of Limerick - BSc. Multimedia and Computer Games Design</p>
+          </div>
+         
+          <li>
+            <br>
+            <br>
+          </li>
+          <br>
+          <div class="arrow-up"></div>
+          <div class="frame">
+            <time style ="color:#68f441">2014</time>  
+            <p>Graduated</p>
+            </div>
+            
+            <li>
+              <br>
+              <br>
+            </li>
+            <br>
+            <div class="arrow-up"></div>
+            <div class="frame">
+              <time style ="color:#68f441">2015</time>  
+              <p>Worked as call center support for 3 Networks</p>
+              </div>
+              
+              <li>
+                <br>
+                <br>
+              </li>
+              <br>
+              <div class="arrow-up"></div>
+              <div class="frame">
+                <time style ="color:#68f441">2015</time>  
+                <p>Worked as Application Support engineer at AIB</p>
+                </div>
+               
+                <li>
+                  <br>
+                  <br>
+                </li>
+                <br>
+                <div class="arrow-up"></div>
+                <div class="frame">
+                  <time style ="color:#68f441">2016</time>  
+                  <p>Worked as Sr. Tech support Engineer and Implementation Manager at Upland Altify</p>
+                  </div>
+                 
+                  <li>
+                    <br>
+                    <br>
+                  </li>
+                  <br>
+                  <div class="arrow-up"></div>
+                  <div class="frame">
+                    <time style ="color:#68f441">2020</time>  
+                    <p>Created this website</p>
+                    </div>
+                   
+                    <li>
+                      <br>
+                      <br>
+                    </li>
+                    <br>
+                    <div class="arrow-up"></div>
+                    <div class="frame">
+                      <time style ="color:#68f441">2020</time>  
+                      <p>University Of Limerick - Masters in Interaction and Experience Design</p>
+                      </div>
+                      
+                      <li>
+                        <br>
+                        <br>
+                      </li>
+                      <br>
+                      <div class="arrow-up"></div>
+                      <div class="frame">
+                        <time style ="color:#68f441">2021</time>  
+                        <p>University Of Limerick - Masters in Interaction and Experience Design</p>
+                        </div>
+                        <br>
+
+   
+  </ul>
+</section>
+
+
+<br>
+<br>
+
+
         <button class="btn btn-primary btn-rounded" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
           Close Timeline
           
@@ -199,8 +358,8 @@
       <br>
   <h1 id="Contact">Contact</h1>
 
-  <p>Email - Tony8egan@hotmail.com</p>
-  <p>Linkedin - https://ie.linkedin.com/in/tony-egan-76a13683</p>
+  <p style ="color:rgb(233, 233, 233)">Email - Tony8egan@hotmail.com</p>
+  <p style ="color:rgb(233, 233, 233)">Linkedin - https://ie.linkedin.com/in/tony-egan-76a13683</p>
 </div>
 </div>
 </div>
