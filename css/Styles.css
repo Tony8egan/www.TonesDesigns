@@ -41,18 +41,27 @@ body
   background-color: rgb(244, 244, 244);
 }
 
+.projectContainer
+{
+  background:transparent;
+  border-radius: 1px;
+  border-color: black;
+}
+
 .imageButtonText
 {
   background-color: rgba(0, 0, 0, 0.639);
   padding:4px;
 }
 
-.btn 
-{
-  background-color: #1fb8ae;
-  border-color: white;
-  color: rgb(240, 240, 240);
-  width: 250px;
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active, 
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover, .btn-rounded:focus,.btn-rounded:active
+, .btn-rounded:hover{
+    box-shadow: none!important;
+    outline: 0;
+    background:transparent;
+    border-color: #1fb8ae;
 }
 
 .btn-rounded
@@ -67,10 +76,64 @@ body
   background: transparent;
 }
 
-.btn:hover 
+.btn-rounded2
+{
+  background: transparent;
+  border: none;
+  margin: 30px auto 0;
+  display: block;
+  font-size: 20px;
+  outline: none;
+  color:black;
+  position: relative;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+  .btn-rounded2:before
+  {
+      content: '';
+      border-bottom: 5px solid #00d7c8;
+      padding: 0 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 0;
+      transition: 0.3s;
+      
+}
+      
+.btn-rounded2:hover:before
+{
+      width: 80%;
+      padding: 0;
+      
+}
+.btn-rounded2:active
+{
+      background: black;
+      color: white;
+      transition: none;
+      
+  
+}
+.btn-rounded2:hover
+{
+      
+      color: black;
+      
+      
+  
+}
+
+
+
+.btn-rounded:hover 
 {
   background-color: #00d7c8;
-  background-image: linear-gradient(to bottom right, #1fb8ae, #00d7c8);
   border: 2px solid #00d7c8;
   color: rgb(240, 240, 240);
 }
