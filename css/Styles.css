@@ -114,7 +114,7 @@ body
 }
 .btn-rounded2:active
 {
-      background: black;
+      background: transparent;
       color: white;
       transition: none;
       
