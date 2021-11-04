@@ -154,6 +154,7 @@ body
 
  
 transform: scale(0.91);
+ 
   color:rgb(235, 235, 88);
   
 }
@@ -257,9 +258,9 @@ transform: scale(0.91);
   {
     text-align: center;
     background-color: #20292f;
-  
+    color:rgb(233, 233, 233);
           border-bottom: 0px;
-          padding:20px;
+          
     
   }
 
