@@ -20,9 +20,11 @@
 </head>
 <style>
 
+ 
+
 body
 {
-  background:rgb(244, 244, 244);;   /*rgb(244, 244, 244)*/
+  background:rgb(244, 244, 244);   /*rgb(244, 244, 244)*/
   
 }
 
@@ -35,8 +37,6 @@ body
 }
 
 
-
-
 /* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -45,6 +45,19 @@ body
   padding: 100px 0;
 }
 
+
+
+.logobackground
+{
+  
+  background: linear-gradient(-45deg,  var(--main-bg-color,rgb(18, 226, 230)), var(--my-color,rgb(33, 131, 184)), var(--my-color2,rgb(225, 16, 16)), var(--my-color3,rgb(135, 6, 6)));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color:  rgb(18, 226, 230);
+}
 
 
 h1 {
@@ -113,7 +126,17 @@ padding-right: 5px;
   
 }
 
-
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
 
 
 
@@ -123,9 +146,54 @@ padding-right: 5px;
 <body>
 <header>
   
+  <script>
+    function randnumber1()
+    {
+      
+      var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+      document.documentElement.style.setProperty('--main-bg-color', randomColor);
+      
+    }
+    window.onload = randnumber1();
+    
+    </script>
+    
+    <script>
+     
+      function randnumber2()
+      {
+        var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+        document.documentElement.style.setProperty('--my-color', randomColor);
+      }
+      window.onload = randnumber2();
+      </script>
+    
+    <script>
+      function randnumber3()
+      {
+        var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+        document.documentElement.style.setProperty('--my-color2', randomColor);
+      }
+      window.onload = randnumber3();
+      </script>
+    
+    <script>
+      function randnumber4()
+      {
+        var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+        document.documentElement.style.setProperty('--my-color3', randomColor);
+      }
+      window.onload = randnumber4();
+      </script>
+
+
+
+  
+
   <nav class="navbar fixed-top">
     
     <div class="banner" onclick="myFunction(this);toggleNav()" id="Xbutton">
+     
         <div class="bar1 bars" style = "margin-top:5px;margin-left:5px;cursor:pointer"></div>
         <div class="bar2 bars" style = "margin-left:5px;cursor:pointer"></div>
         <div class="bar3 bars" style = "margin-left:5px;cursor:pointer;"></div>
@@ -142,12 +210,11 @@ padding-right: 5px;
 <div class= "container">
   <div class="row" >
     <div class="col-sm-12" style ="margin-top:35px;"></div>
-    <div class="col-sm-1">
-    </div>
-    <div class="col-sm-6 ">
+    
+    <div class="col-sm-7 ">
       
     
-      <img class = "img-fluid" src="images/TonyCollage.jpg" alt="Lost image" style="object-fit: cover;">
+      <img class = "img-fluid logobackground" src="images/TDLogoCover.png" alt="Lost image" style="object-fit: cover;border-color:rgb(244, 244, 244);border-style:solid;border-radius: 2px;">
      
     </div>
     <div class="col-sm-1">
@@ -155,7 +222,7 @@ padding-right: 5px;
     <div class="col-sm-4" style="font-size: 20px;margin-top:20px;">
       <br>
       <div id ="test">
-      <H1 style ="font-family: 'Roboto', sans-serif;;font-size: 64px; font-weight: 300;color:rgb(0, 0, 0)"> Hi<a>, my name is Tony Egan</a><a2> and I'm a UX/UI Designer</a2> </H1>
+      <H1 style ="font-family: 'Roboto', sans-serif;;font-size: 64px; font-weight: 300;color:rgb(0, 0, 0)"> Hi<a>, my name is Tony Egan</a><a2> and I'm an Irish UX/UI Designer</a2> </H1>
       <br>
     </div>
     </div>
@@ -179,8 +246,8 @@ padding-right: 5px;
 
       <div class="col-sm-4" style="margin-top:35px">
         
-          <a href="/Thesis.html" class ="imageButton">
-            <img src="images/Thumb.jpg" alt="Lost image" style="object-fit: cover;border-radius: 5px;background-color: black; height: 300px">
+          <a href="/Thesis.html" >
+            <img src="images/Thumb.jpg" class ="imageButton" alt="Lost image" style="object-fit: cover;border-radius: 2px;background-color: black; height: 300px">
             <H2 style ="color:black;padding-top: 2px;">Thesis</H2>
             
             <p style ="color:black;font-weight: 300">The work life balance monitor. A device that aims to help people working from home to create greater distinction between work and non work time.</p>
@@ -190,8 +257,8 @@ padding-right: 5px;
       
       <div class="col-sm-4"  style="margin-top:35px">
         
-        <a href="/DesignProbes.html" class ="imageButton">
-        <img src="images/Probes/IntrotoProbesCover.png" alt="Lost image" style="object-fit: cover;border-radius: 5px;background-color: black; height: 300px">
+        <a href="/DesignProbes.html" >
+        <img src="images/Probes/IntrotoProbesCover.png" class ="imageButton" alt="Lost image" style="object-fit: cover;background-color: black;border-radius: 2px; height: 300px">
         <H2 style="color:black;padding-top: 2px;" >Design Probes</H2>
         <p style ="color:black;font-weight: 300">An exercise in participatory design and user research. Using design probes to understand more about people in relation to the future of autonomous vehicles.</p>
       </a>
@@ -204,8 +271,8 @@ padding-right: 5px;
 
       <div class="col-sm-4" style="margin-top:35px">
         
-          <a href="/GolfRules.html" class ="imageButton">
-            <img src="images/ROGApp/OldHead.jpeg" alt="Lost image" style="object-fit: cover;border-radius: 5px;background-color: black; height: 300px">
+          <a href="/GolfRules.html" >
+            <img src="images/ROGApp/OldHead.jpeg" class ="imageButton" alt="Lost image" style="object-fit: cover;background-color: black;border-radius: 2px; height: 300px">
             <H2 style ="color:black;padding-top: 2px;">Golf Rules</H2>
             <p style ="color:black;font-weight: 300">An interactive rulebook for the game of golf. Making the game easier and more accessible for new and existing golfers.</p>
           </a>
@@ -213,8 +280,8 @@ padding-right: 5px;
       <div class="col-sm-2"></div>
       <div class="col-sm-4"  style="margin-top:35px">
         
-      <a href="/SweepCity.html" class ="imageButton">
-        <img src="images/SweepCity/SweepCityCover.png" alt="Lost image" style="object-fit: cover;border-radius: 5px;background-color: black; height: 300px">
+      <a href="/SweepCity.html" >
+        <img src="images/SweepCity/SweepCityCover.png" class ="imageButton" alt="Lost image" style="object-fit: cover;background-color: black; border-radius: 2px;height: 300px">
         <H2 style ="color:black;padding-top: 2px;">Sweep City</H2>
         <p style ="color:black;font-weight: 300;">An app that aims to educate the children of Sri Lanka about the importance of waste management through fun and engaging activities.</p>
       </a>
@@ -246,14 +313,18 @@ padding-right: 5px;
 
 
     <div class="row" id="AboutMe"> 
-      <div class="col-sm-12" style ="margin-top:50px;"></div>
-      <div class="col-md-1">
-      </div>
-      <div class="col-md-10">
-    <div class="TextSection" style ="color:rgb(233, 233, 233)">
+      <div class="col-sm-12" style ="margin-top:50px;">
+      <div class="TextSection" style ="color:rgb(233, 233, 233)">
+      
+      
+      <div class="col-sm-12">
+    
       <br>
         <h1 style ="color:rgb(255, 255, 255)">About Me</h1>
     <br>
+    </div>
+    <div class="row">
+    <div class="col-sm-6">
     <p style ="margin-left: 10%;margin-right: 10%;text-align: left;font-size: 18px;font-weight: 250;">My name is Tony and I'm from County Clare in Ireland. I studied a bachelor of science in multimedia and computer games development at the 
       University of Limerick and have worked in support and customer success roles in the tech industry for over 5 years. Having completed a Masters of science in 
       Interaction and Experience Design at the University of Limerick and receiving first class honours, I’ve now moved towards working in design. Working directly 
@@ -264,13 +335,19 @@ padding-right: 5px;
     At the end of 2020 I decided to make the move towards working in design when I applied for a UX Masters at UL. I coded this website to showcase my progress and interest 
     in design as well as to sharpen my existing programming, web design and interaction design skills. I'm also passionate about Golf, Music and I love to travel.</p>
 
-    <br>
-    <br>
-
+   
+</div>
+<div class="col-sm-1"></div>
+<div class="col-sm-4">
+  <img class = "img-fluid" src="images/TonyCollage.jpg" alt="Lost image" style="object-fit: cover;">
+</div>
+</div>
     <button class="btn btn-rounded2" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style ="color:white;font-family: 'Lato', sans-serif;">
       Timeline
 
     </button>
+    <br>
+    <br>
     <div class="collapse" id="collapseExample">
       <br>
       <br>
@@ -279,7 +356,6 @@ padding-right: 5px;
   <ul>
     
     
-      <br>
       <div class="frame">
     <time style ="color:#68f441">1993</time>  
     <p>Born</p>
@@ -410,7 +486,7 @@ padding-right: 5px;
           Close Timeline
           
         </button>
-      
+        
         <br>
           <br>
       </div>
@@ -426,16 +502,29 @@ padding-right: 5px;
     <div class="TextSection3"> 
       <br>
   <h1 id="Contact">Contact</h1>
-
-  <p style ="color:rgb(233, 233, 233)">Email - Tony8egan@hotmail.com</p>
-  <p style ="color:rgb(233, 233, 233)">Linkedin - https://ie.linkedin.com/in/tony-egan-76a13683</p>
+  </div>
+  </div>
+  </div>
+  <div class ="row" style="padding-bottom: 35px;">
+   
+    <div class="col-sm-1"></div>
+  <div class="col-sm-2" >
+  <p style="font-size:16px;font-weight: 1000;font-family: Roboto,sans-serif;text-align: left;padding-left: 5px;">Tony Egan — </p><p style="font-size:15px;font-weight: 350;text-align: left;padding-left: 5px;">UX Designer</p>
+</div>
+<div class="col-sm-2" ></div>
+<div class="col-sm-2">
+  <p style="font-size:16px;font-weight: 1000;font-family: Roboto,sans-serif;text-align: left;padding-left: 5px;">Email — </p><p style="font-size:15px;font-weight: 400;text-align: left;padding-left: 5px;">Tony8egan@hotmail.com</p>
+</div>
+<div class="col-sm-2" ></div>
+<div class="col-sm-2">
+  <p style="font-size:16px;font-weight: 1000;font-family: Roboto,sans-serif;text-align: left;padding-left: 5px;">Linkedin — </p> <p style="font-size:15px;font-weight: 400;text-align: left;padding-left: 5px;">https://ie.linkedin.com/in/tony-egan-76a13683</p>
 </div>
 </div>
 </div>
+</div>
+</body>
 
-
-  
-
+ 
   <div id="mySidenav" class="sidenav" style ="background-image: url('/images/teal.jpeg');">
     
   
