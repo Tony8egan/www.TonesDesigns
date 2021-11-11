@@ -26,6 +26,7 @@ body
 {
   background:rgb(244, 244, 244);   /*rgb(244, 244, 244)*/
   
+
 }
 
 *,
@@ -46,18 +47,36 @@ body
 }
 
 
-
-.logobackground
+.backuplogobackground
 {
-  
-  background: linear-gradient(-45deg,  var(--main-bg-color,rgb(18, 226, 230)), var(--my-color,rgb(33, 131, 184)), var(--my-color2,rgb(225, 16, 16)), var(--my-color3,rgb(135, 6, 6)));
+
+    
+    background: linear-gradient(-45deg, rgb(18, 226, 230), rgb(33, 131, 184), rgb(225, 16, 16), rgb(135, 6, 6));
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color:  rgb(18, 226, 230);
+    background-color: rgb(18, 226, 230);
+    z-index: 1;
+
 }
+
+.logobackground
+{
+
+    
+    background: linear-gradient(-45deg,  var(--main-bg-color,rgb(18, 226, 230)), var(--my-color,rgb(33, 131, 184)), var(--my-color2,rgb(225, 16, 16)), var(--my-color3,rgb(135, 6, 6)));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    background-color: transparent;
+}
+
+
 
 
 h1 {
@@ -146,49 +165,6 @@ padding-right: 5px;
 <body>
 <header>
   
-  <script>
-    function randnumber1()
-    {
-      
-      var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
-      document.documentElement.style.setProperty('--main-bg-color', randomColor);
-      
-    }
-    window.onload = randnumber1();
-    
-    </script>
-    
-    <script>
-     
-      function randnumber2()
-      {
-        var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
-        document.documentElement.style.setProperty('--my-color', randomColor);
-      }
-      window.onload = randnumber2();
-      </script>
-    
-    <script>
-      function randnumber3()
-      {
-        var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
-        document.documentElement.style.setProperty('--my-color2', randomColor);
-      }
-      window.onload = randnumber3();
-      </script>
-    
-    <script>
-      function randnumber4()
-      {
-        var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
-        document.documentElement.style.setProperty('--my-color3', randomColor);
-      }
-      window.onload = randnumber4();
-      </script>
-
-
-
-  
 
   <nav class="navbar fixed-top">
     
@@ -213,9 +189,9 @@ padding-right: 5px;
     
     <div class="col-sm-7 ">
       
-    
-      <img class = "img-fluid logobackground" src="images/TDLogoCover.png" alt="Lost image" style="object-fit: contain;border-color:rgb(244, 244, 244);border-style:solid;border-radius: 2px;">
-     
+    <div class ="backuplogobackground">
+      <img class = "img-fluid logobackground " src="images/TDLogoCover.png" alt="Lost image" style="object-fit: contain;border-color:rgb(244, 244, 244);border-style:solid;border-radius: 2px;">
+     </div>
     </div>
     <div class="col-sm-1">
     </div>
@@ -258,7 +234,7 @@ padding-right: 5px;
       <div class="col-sm-4"  style="margin-top:35px">
         
         <a href="/DesignProbes.html" >
-        <img src="images/Probes/IntrotoProbesCover.png" class ="imageButton" alt="Lost image" style="object-fit: cover;background-color: black;border-radius: 2px; height: 300px">
+        <img src="images/Probes/IntroToProbesCover.png" class ="imageButton" alt="Lost image" style="object-fit: cover;background-color: black;border-radius: 2px; height: 300px">
         <H2 style="color:black;padding-top: 2px;" >Design Probes</H2>
         <p style ="color:black;font-weight: 300">An exercise in participatory design and user research. Using design probes to understand more about people in relation to the future of autonomous vehicles.</p>
       </a>
@@ -588,10 +564,50 @@ padding-right: 5px;
   }
   </script>
 
-
+<script>
+  function randnumber1()
+  {
+    
+    var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+    document.documentElement.style.setProperty('--main-bg-color', randomColor);
+    
+  }
+  window.onload = randnumber1();
+  
+  </script>
+  
+  <script>
+   
+    function randnumber2()
+    {
+      var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+      document.documentElement.style.setProperty('--my-color', randomColor);
+    }
+    window.onload = randnumber2();
+    </script>
+  
+  <script>
+    function randnumber3()
+    {
+      var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+      document.documentElement.style.setProperty('--my-color2', randomColor);
+    }
+    window.onload = randnumber3();
+    </script>
+  
+  <script>
+    function randnumber4()
+    {
+      var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+      document.documentElement.style.setProperty('--my-color3', randomColor);
+    }
+    window.onload = randnumber4();
+    </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+  
 </html>
+
