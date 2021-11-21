@@ -329,10 +329,15 @@ transform: scale(0.91);
   transition: 0.3s;
   cursor: pointer;
 }
+
+
 .desctiptiveText
 {
-  font-family: 'Titillium Web', sans-serif;
+  /*font-family: 'Titillium Web', sans-serif;*/
+  font-family: sans-serif;
 }
+
+
 .audio-container {
   display: flex;
   justify-content: center;
