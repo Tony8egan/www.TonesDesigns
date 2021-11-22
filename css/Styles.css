@@ -151,23 +151,34 @@ body
   color: rgb(240, 240, 240);
 }
 
+
 .imageButton
 {
   
   transition: all 0.65s;
   color: white;
   
-  
 }
 
 .imageButton:hover{
 
  
-transform: scale(0.91);
- 
+transform: scale(1.18);
   color:rgb(235, 235, 88);
   
 }
+
+.framed
+{
+  
+  transition: all 0.65s;
+  overflow: hidden;
+}
+
+.framed:hover{
+  transform: scale(0.95);
+}
+
 
 .hovereffect
 {
