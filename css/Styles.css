@@ -345,7 +345,8 @@ transform: scale(1.18);
 .desctiptiveText
 {
   /*font-family: 'Titillium Web', sans-serif;*/
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
+      line-height: 1.4;
 }
 
 
