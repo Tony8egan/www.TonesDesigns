@@ -189,7 +189,7 @@ padding-right: 5px;
   <div class="row" >
     <div class="col-sm-12" style ="margin-top:35px;"></div>
     
-    <div class="col-sm-7 ">
+    <div class="col-sm-7 " id ='reload'>
       
     <div class ="backuplogobackground">
       <img class = "img-fluid logobackground " src="images/TDLogoCover3.png" alt="Lost image" style="object-fit: contain;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" onclick="randnumber1(),randnumber2(),randnumber3(),randnumber4()">
@@ -200,7 +200,7 @@ padding-right: 5px;
     <div class="col-sm-4" style="font-size: 20px;margin-top:20px;">
       <br>
       <div id ="test">
-      <H1 style ="font-family: 'Roboto', sans-serif;;font-size: 64px; font-weight: 300;color:rgb(0, 0, 0)"> Hi<a>, my name is Tony Egan</a><a2> and I'm an Irish Designer</a2> </H1>
+      <H1  class = "embossed"> Hi<a>, my name is Tony Egan</a><a2> and I'm an Irish Designer</a2> </H1>
       <br>
     </div>
     </div>
@@ -692,6 +692,19 @@ padding-right: 5px;
     }
     window.onload = randnumber4();
     </script>
+                           
+  <script> 
+  window.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image = document.getElementById("reload");
+    image.style.transform = "rotate(" + window.pageYOffset/7 + "deg)";
+   
+
+}
+  </script>                         
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
