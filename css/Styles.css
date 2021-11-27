@@ -499,6 +499,11 @@ to{opacity:1}
   
 }
 
+.carousel-indicators li 
+{
+	background-color: black;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
