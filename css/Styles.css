@@ -42,6 +42,19 @@ body
   background-color: rgb(244, 244, 244);
 }
 
+.embossed{
+  color: #f0f0f0;
+  font-size: 65px;
+  font-family: Futura;
+  background-color: #666666;
+  text-shadow: 1px 4px 4px #555;
+  text-align: left;
+  -webkit-background-clip: text;
+  background-clip: text;
+    -moz-background-clip: text;
+
+}
+
 #CollapseButtons{
   padding-left:30%;
   padding-right:30%;
