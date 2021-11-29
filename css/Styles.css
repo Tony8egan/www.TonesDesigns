@@ -35,10 +35,11 @@ body {
 }
 
 .embossed{
-  color: #00d7c8;
-  font-size: 65px;
+  color: #f0f0f0;
+  font-size: 100px;
   font-family: Futura;
-  
+  background-color: #666666;
+  text-shadow: 1px 4px 4px #555;
   text-align: left;
   -webkit-background-clip: text;
   background-clip: text;
@@ -246,7 +247,7 @@ padding-right: 5px;
   {
     background: #1c7c8e3c;
   width:250px;
-  border-radius: 10px;
+  border-radius: 50px;
   position: relative;
   margin: 0 auto;
   padding-top: 11px;
