@@ -35,11 +35,10 @@ body {
 }
 
 .embossed{
-  color: #f0f0f0;
+  color: #00d7c8;
   font-size: 65px;
   font-family: Futura;
-  background-color: #666666;
-  text-shadow: 1px 4px 4px #555;
+  
   text-align: left;
   -webkit-background-clip: text;
   background-clip: text;
@@ -165,6 +164,19 @@ body {
           transform: scale(1.18);
   color: #ebeb58;
 }
+.mobilealign
+{
+padding-left: 5px;
+text-align: left;
+}
+
+@media screen and (max-width: 600px){
+.mobilealign
+{
+  padding-left:26px;
+  text-align: left;
+}
+}
 
 .framed {
   -webkit-transition: all 0.65s;
@@ -219,7 +231,7 @@ body {
   background: #1c7c8e3c;
 width:500px;
 
-border-radius: 10px;
+border-radius: 80px;
 position: relative;
 margin: 0 auto;
 padding-top: 11px;
