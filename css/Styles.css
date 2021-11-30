@@ -226,19 +226,19 @@ text-align: left;
 }
 
 
-
 .frame
 {
   background: #1c7c8e3c;
-width:500px;
+width:550px;
 
 border-radius: 80px;
 position: relative;
 margin: 0 auto;
 padding-top: 11px;
-padding-bottom: 10px;
-padding-left: 5px;
-padding-right: 5px;
+padding-bottom: 25px;
+padding-left: 45px;
+padding-right: 45px;
+
 font-size: 18px;
 }
 
