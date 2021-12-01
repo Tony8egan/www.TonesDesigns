@@ -171,12 +171,28 @@ padding-left: 5px;
 text-align: left;
 }
 
+
 @media screen and (max-width: 600px){
 .mobilealign
 {
   padding-left:26px;
   text-align: left;
 }
+}
+
+.IntroText
+{
+  font-family: 'Lexend Deca', sans-serif; 
+  font-size: 69px;
+}
+
+@media screen and (max-width: 600px){
+
+  .IntroText
+  {
+    font-family: 'Lexend Deca', sans-serif; 
+    font-size: 50px;
+  }
 }
 
 .framed {
