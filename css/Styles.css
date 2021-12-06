@@ -180,6 +180,19 @@ text-align: left;
 }
 }
 
+.MainProjectHeaderText
+{
+  font-family: 'Lexend Deca', sans-serif; 
+  font-weight: 200;
+}
+
+.SubProjectHeaderText
+{
+  font-family: 'Lexend Deca', sans-serif; 
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
 .IntroText
 {
   font-family: 'Lexend Deca', sans-serif; 
