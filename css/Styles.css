@@ -184,12 +184,14 @@ text-align: left;
 {
   font-family: 'Lexend Deca', sans-serif; 
   font-weight: 200;
+  
 }
 
 .SubProjectHeaderText
 {
   font-family: 'Lexend Deca', sans-serif; 
   padding-bottom: 5px;
+  font-size: 21px;
 }
 
 .IntroText
