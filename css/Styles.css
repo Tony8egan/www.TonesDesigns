@@ -29,6 +29,19 @@ img {
      object-fit: cover;
 }
 
+.Scrollable{
+  overflow:scroll;
+  width:90%;
+ margin-left: 5%;
+}
+
+.Scrollable img {
+  overflow:scroll;
+  width:100%;
+  
+}
+
+
 body {
   overflow-x: hidden;
   background-color: #f4f4f4;
