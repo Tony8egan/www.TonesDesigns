@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Projects</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+        
+        <link rel="stylesheet" href="css/Styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
+        <link rel="icon" type="image/png" href="images/TD2.png">
+        <link rel="shortcut icon" type="image/png" href="images/TD2.png">
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300;400&family=Source+Code+Pro:wght@200;300&display=swap" rel="stylesheet">
+<script src="APIPlayground.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+</head>
+
+<style>
+    body{
+        background-color: rgb(0, 0, 0);
+        background-image: linear-gradient(to bottom right, #000000,rgb(55, 55, 55));
+        
+    }
+   
+    p{
+      /*font-family: futura-lt-w01-book,sans-serif;*/
+      /*font-family: Avenirnext, sans-serif;*/
+      font-family: 'Lato', sans-serif;
+      line-height: 1.8;
+    }
+
+    .parallax {
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position:center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 390px;
+  width:100%;
+  background-image: url('/images/API/API.png');
+}
+    
+
+
+    
+</style>
+
+
+<body onload="setUp()">
+    
+  <header>
+    <nav class="navbar fixed-top">
+      <div class="banner" onclick="myFunction(this);toggleNav()" id ="Xbutton">
+          <div class="bar1" style = "margin-top:5px;margin-left:5px;cursor:pointer"></div>
+          <div class="bar2" style = "margin-left:5px;cursor:pointer"></div>
+          <div class="bar3" style = "margin-left:5px;cursor:pointer;"></div>
+      </div>
+  
+        <H2 style="color:white;text-align:center;font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        font-family: 'Source Code Pro', monospace;"><a href="/Projects.html">API Playground</a></H2>
+        
+        
+    </nav>
+  </header>
+
+  
+  <div id="mySidenav" class="sidenav" style ="color: white;background-image: url('/images/teal.jpeg');">
+    
+        
+    <a href="Home.html" class ="hovereffect" style ="text-decoration:none;">Home</a>
+    <hr style ="border: 1px solid rgb(244, 244, 244);margin-left: 10%; margin-right: 20%;">
+    <a href="/Home.html#AboutMe" class ="hovereffect" style ="text-decoration:none;" onclick="myFunction(Xbutton);toggleNav()">About Me</a>
+    <hr style ="border: 1px solid rgb(244, 244, 244);margin-left: 10%; margin-right: 20%;">
+    <a href="Projects.html" class ="hovereffect" style ="text-decoration:none;">My Work</a>
+    <hr style ="border: 1px solid rgb(244, 244, 244);margin-left: 10%; margin-right: 20%;">
+    <a href="/CV.html" class ="hovereffect" style ="text-decoration:none;font-family: 'Lato', sans-serif;" onclick="myFunction(Xbutton);toggleNav()">CV / Résumé</a>
+          <hr style ="border: 1px solid rgb(244, 244, 244);margin-left: 10%; margin-right: 20%;">
+    <a href="/Home.html#Contact" class ="hovereffect" style ="text-decoration:none;" onclick="myFunction(Xbutton);toggleNav()">Contact</a>
+    <hr style ="border: 1px solid rgb(244, 244, 244);margin-left: 10%; margin-right: 20%;">
+    
+    
+  </div>
+
+
+  
+  <div class="row">
+    
+        
+          
+          <div class="col-sm-12"  style="height: 390px;text-align: center; ">
+            <div class="parallax">
+            <br>
+           <br>
+           <br>
+           <br>
+           <br>
+                <H1 style ="color:rgb(255, 255, 255);padding-left: 5px;padding-right: 5px;font-weight: 100;">API Playground</H1>
+            
+          </div>
+        </div>
+        
+        
+       
+        </div>
+        <div class="row" style="background-color:white;padding: 20px;">
+          <div class="col-sm-2" ></div>
+        <div class="col-sm-8">
+          <br>
+            <H3 style ="color:black;font-weight: 300;">Background</H3>
+            <hr style ="border: 1px solid; color:#000000">
+            
+        <p style ="color:black; " >This is somewhere to experiment with API's and demonstrate my ability to work with and present data from API's.</p>
+        <br>
+        
+
+  <br> 
+  
+      </div>
+      
+      
+    <div class="col-sm-2" ></div>
+
+   
+      </div>
+
+
+      
+    </div>
+    
+    
+  
+    
+    <div class="row" style="margin-top:75px;margin-bottom: 150px;">
+      <div class="col-sm-1 "></div>
+      <div class="col-sm-3 ">
+        <H2 style ="color:white;text-align: center;font-weight: 300;">Weather API</H2>
+        <br>
+        <p style ="color:white;padding-left: 5%;padding-right: 5%;" class ="desctiptiveText">This information is from Open Weather Map: <a href="https://openweathermap.org/" target="_blank">https://openweathermap.org/</a> </p>
+        <br>
+        <br>
+        <div style ="border: 2px solid rgb(255, 255, 255);padding: 10px;border-radius: 25px;background-color: rgba(255, 255, 255, 0.173);margin-left: 5%;margin-right: 5%;">
+        <H4 style="color:rgb(255, 255, 255);text-align: center;font-weight: 300;padding-bottom: 5px;">City</H4>
+       
+          <input value="Dublin" style="display: block;margin:auto;" type="text" id='aLocation'></input>
+        <button id = "UpdateLocation" class="btn btn-rounded2" type="button" style="font-family: 'Lato', sans-serif;color:white" onclick = "ResetWeatherLocation(document.getElementById('aLocation').value)">Update City</button>
+        
+      </div>
+      </div>
+    <div class="col-sm-8 ">
+      <div style ="border: 2px solid rgb(255, 255, 255);padding: 10px;border-radius: 25px;background-color: rgba(255, 255, 255, 0.173);margin-top: 80px; margin-left: 5%;margin-right: 5%;">
+      <H1 style="color:rgb(255, 255, 255);text-align: center;font-weight: 300;"><span id="locationSelected"></span> , <span id="locationSelected2"></span> </H1>
+     <hr style ="border-color:white">
+     <div style="text-align: center;">
+      <div style="display: inline-block; text-align: left;">
+      <H1 style="color:rgb(255, 255, 255);font-weight: 300;">Humidity: <a style ="color:rgb(204, 187, 244)"><span id="humidity"></span> %</a></H1>
+      <H1 style="color:rgb(255, 255, 255);font-weight: 300;">Temp Celcius: <a style ="color:rgb(204, 187, 244)"><span id="Temp"></span> &deg;</a></H1>
+      <H1 style="color:rgb(255, 255, 255);font-weight: 300;">Wind Speed: <a style ="color:rgb(204, 187, 244)"><span id="WindS"></span> kph</a></H1>
+    </div>  
+    </div>
+    </div>
+        </div>
+        </div>
+
+        <div class="row" style="background-color:white;padding: 20px;padding-top:75px;">
+            <div class="col-sm-1 "></div>
+      <div class="col-sm-3 ">
+        <H2 style ="color:rgb(0, 0, 0);text-align: center;font-weight: 300;">Crypto Prices</H2>
+        <br>
+        <p style ="color:rgb(0, 0, 0);padding-left: 5%;padding-right: 5%;" class ="desctiptiveText">This information is from coinGecko: <a href="https://www.coingecko.com/" target="_blank">https://coincap.io/</a></p>
+        <br>
+        <br>
+        </div>
+        <div class="col-sm-1 "></div>
+        <div class="col-sm-2 ">
+          <H2 style ="color:rgb(0, 0, 0);text-align: center;font-weight: 300;">Ethereum</H1>
+            <br>
+            <H3 style="color:rgb(0, 0, 0);font-weight: 300;text-align: center;">€ <a style ="color:rgb(10, 177, 63)"><span id="EthereumPrice"></span></a></H1>
+        </div>
+        <div class="col-sm-2 ">
+          <H2 style ="color:rgb(0, 0, 0);text-align: center;font-weight: 300;">BitCoin</H1>
+            <br>
+            <H3 style="color:rgb(0, 0, 0);font-weight: 300;text-align: center;">€ <a style ="color:rgb(10, 177, 63)"><span id="BitcoinPrice"></span></a></H1>
+        
+        </div>
+        <div class="col-sm-2 ">
+          <H2 style ="color:rgb(0, 0, 0);text-align: center;font-weight: 300;">LiteCoin</H1>
+            <br>
+            <H3 style="color:rgb(0, 0, 0);font-weight: 300;text-align: center;">€ <a style ="color:rgb(10, 177, 63)"><span id="LiteCoinPrice"></span></a></H1>
+        
+        </div>
+        
+<div class="col-sm-5 "></div>
+<div class="col-sm-6 ">
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+</div>
+        </div>
+          
+                
+ 
+
+
+
+
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
+  
+  
+  
+
+
+
+  <script>
+  
+    
+  function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "330px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "330px";
+    }
+  }
+  </script>
+
+
+
+ 
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+
+  </body>
+</html>
+  
+
