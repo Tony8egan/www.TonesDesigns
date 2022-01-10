@@ -1,5 +1,5 @@
 
-let WeatherAPIUrl = "https://api.openweathermap.org/data/2.5/weather?q=Dublin&units=metric&appid=5e13d9fc321f378e5251184a78baadc9";
+let WeatherAPIUrl = "https://api.openweathermap.org/data/2.5/weather?q=Limerick&units=metric&appid=5e13d9fc321f378e5251184a78baadc9";
 let CryptoAPIUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
 
