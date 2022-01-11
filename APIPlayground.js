@@ -42,36 +42,47 @@ async function GetWeatherData()
 
 async function GetCryptoData()
 {
-   
+    
     let response = await fetch(CryptoAPIUrl);
-    let data = await response.json();
+    let data = await response.json();           //Make connection to API server and retrieve data
     console.log(data);
-    let BitcoinLabel = data[0].symbol;
-    BitcoinPrice = data[0].current_price;
-    let EthereumLabel = data[1].symbol;
-   EthereumPrice = data[1].current_price;
-    let LiteCoinLabel = data[21].symbol;
-    LiteCoinPrice = data[21].current_price;
-    console.log("Bitcoin Price: " + BitcoinLabel + " €" + BitcoinPrice + " /coin");
+    
+
+    //let BitcoinLabel = data[0].symbol;
+    //BitcoinPrice = data[0].current_price;
+
+    //let EthereumLabel = data[1].symbol;
+    //EthereumPrice = data[1].current_price;
+
+    //let LiteCoinLabel = data[21].symbol;
+    //LiteCoinPrice = data[21].current_price;
+
+    let ETHpos = data.find(element => element.symbol =='eth');
+    console.log("ETHPOS: " + ETHpos.current_price);             //Get specific Crypto data
+    let EthereumLabel = ETHpos.symbol
+    EthereumPrice = ETHpos.current_price
+
+    let BTCpos = data.find(element => element.symbol =='btc');
+    console.log("BTCPOS: " + BTCpos.current_price);             //Get specific Crypto data
+    let BitcoinLabel = BTCpos.symbol;
+    BitcoinPrice = BTCpos.current_price;
+
+    let LTCpos = data.find(element => element.symbol =='ltc');
+    console.log("LTCPOS: " + LTCpos.current_price);             //Get specific Crypto data
+    let LiteCoinLabel = LTCpos.symbol;
+    LiteCoinPrice = LTCpos.current_price;
+
+    
+    console.log("Bitcoin Price: " + BitcoinLabel + " €" + BitcoinPrice + " /coin");         //Print balues to terminal
     console.log("Ethereum Price: " + EthereumLabel + " €" + EthereumPrice + " /coin");
     console.log("Litecoin Price: " + LiteCoinLabel + " €" + LiteCoinPrice + " /coin");
 
-    document.getElementById('BitcoinPrice').textContent = BitcoinPrice;
+    document.getElementById('BitcoinPrice').textContent = BitcoinPrice;                     //set values
     document.getElementById('EthereumPrice').textContent = EthereumPrice;
     document.getElementById('LiteCoinPrice').textContent = LiteCoinPrice;
 
-    DrawChart();
-    //locationSelected = data.name;
-    //humidity = data.main.humidity;
-    //Temp = data.main.temp;
-    //Wind = data.wind.speed;
-    //console.log(Temp);
-
-    //document.getElementById('locationSelected2').textContent = locationSelected2;
-    //document.getElementById('locationSelected').textContent = locationSelected;
-    //document.getElementById('humidity').textContent = humidity;
-    //document.getElementById('Temp').textContent = Temp;
-    //document.getElementById('WindS').textContent = Wind;
+    DrawChart();                                                                            //draw bar chart function now that crypto data is set
+   
 }
 
 async function ResetWeatherData()
